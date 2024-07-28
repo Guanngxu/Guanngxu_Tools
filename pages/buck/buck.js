@@ -29,5 +29,20 @@ Page({
       Vout_rippleC,
       Vout_ripple
     })
+  },
+
+  onShareAppMessage() {
+    const promise = new Promise(resolve => {
+      setTimeout(() => {
+        resolve({
+          title: 'BUCK 输出纹波'
+        })
+      }, 2000)
+    })
+    return {
+      title: 'BUCK 输出纹波',
+      path: '/pages/buck/buck',
+      promise
+    }
   }
 });

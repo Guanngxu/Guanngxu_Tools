@@ -1,7 +1,7 @@
 export default [
   {
     icon: 'home',
-    text: '首页',
+    text: 'Guanngxu 电路计算工具',
     url: 'pages/home/home',
   },
   {

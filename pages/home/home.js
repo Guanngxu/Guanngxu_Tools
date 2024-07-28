@@ -60,9 +60,11 @@ Page({
     this.loadGoodsList();
   },
 
+
   async loadGoodsList(fresh = false) {
     let list = [
-      { "title": "计算 BUCK 输出纹波", "tags": ["BUCK", "DC-DC"], "page": "/pages/buck/buck" },
+      { "title": "BUCK 输出纹波", "tags": ["BUCK", "DC-DC"], "page": "/pages/buck/buck" },
+      { "title": "并联电阻计算器", "tags": ["电路基础"], "page": "/pages/resistor/resistor" },
     ]
     if (fresh) {
       wx.pageScrollTo({

@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/home/home",
-    "pages/buck/buck"
+    "pages/buck/buck",
+    "pages/resistor/resistor"
   ],
   "requiredPrivateInfos": [
     "chooseAddress"
