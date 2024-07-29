@@ -10,9 +10,8 @@ Page({
     const R2 = Number(this.data.R2);
 
     const R_Result = (R1 * R2) / (R1 + R2);
-    console.info("R_Result", R_Result)
     this.setData({
-      R_Result
+      R_Result: R_Result.toFixed(2)
     })
   },
 

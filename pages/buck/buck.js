@@ -24,10 +24,10 @@ Page({
     const Vout_ripple = Vout_rippleESR + Vout_rippleC;
 
     this.setData({
-      Iripple,
-      Vout_rippleESR,
-      Vout_rippleC,
-      Vout_ripple
+      Iripple: Iripple.toFixed(2),
+      Vout_rippleESR: Vout_rippleESR.toFixed(2),
+      Vout_rippleC: Vout_rippleC.toFixed(2),
+      Vout_ripple: Vout_ripple.toFixed(2)
     })
   },
 
