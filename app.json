@@ -2,7 +2,8 @@
   "pages": [
     "pages/home/home",
     "pages/buck/buck",
-    "pages/resistor/resistor"
+    "pages/resistor/resistor",
+    "pages/vout/vout"
   ],
   "requiredPrivateInfos": [
     "chooseAddress"
