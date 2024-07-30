@@ -11,6 +11,7 @@
     "t-icon": "tdesign-miniprogram/icon/icon",
     "t-toast": "tdesign-miniprogram/toast/toast",
     "t-tabs": "tdesign-miniprogram/tabs/tabs",
+    "goods-list": "/components/goods-list/index",
     "t-tab-panel": "tdesign-miniprogram/tab-panel/tab-panel"
   }
 }

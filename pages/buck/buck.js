@@ -14,13 +14,17 @@ Page({
   },
 
   compute_click() {
-    const diffVinVout = this.data.Vin - this.data.Vout;
-    let curL = this.data.PowerL * 0.000001;
-    let curf = this.data.Switchf * 1000;
+    const Vin = Number(this.data.Vin);
+    const Vout = Number(this.data.Vout);
+    const ESR = Number(this.data.ESR);
+    const Cout = Number(this.data.Cout);
+    const diffVinVout = Vin - Vout;
+    const curL = Number(this.data.PowerL) * 0.000001;
+    const curf = Number(this.data.Switchf) * 1000;
 
-    const Iripple = (diffVinVout * this.data.Vout) / (curL * this.data.Vin * curf);
-    const Vout_rippleESR = this.data.ESR * Iripple;
-    const Vout_rippleC = Iripple / 8 / curf / (this.data.Cout / 1000000) * 1000;
+    const Iripple = (diffVinVout * Vout) / (curL * Vin * curf);
+    const Vout_rippleESR = ESR * Iripple;
+    const Vout_rippleC = Iripple / 8 / curf / (Cout / 1000000) * 1000;
     const Vout_ripple = Vout_rippleESR + Vout_rippleC;
 
     this.setData({

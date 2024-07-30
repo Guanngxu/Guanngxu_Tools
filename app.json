@@ -2,6 +2,7 @@
   "pages": [
     "pages/home/home",
     "pages/buck/buck",
+    "pages/buckvin/buckvin",
     "pages/resistor/resistor",
     "pages/vout/vout"
   ],
