@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "0508 欠压保护计算",
+  "onReachBottomDistance": 10,
+  "backgroundTextStyle": "light",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "t-button": "tdesign-miniprogram/button/button",
+    "t-input": "tdesign-miniprogram/input/input"
+  }
+}
