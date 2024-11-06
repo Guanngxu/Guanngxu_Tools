@@ -5,8 +5,9 @@
     "pages/buckvin/buckvin",
     "pages/resistor/resistor",
     "pages/vout/vout",
-    "pages/0508uvlo/0508uvlo",
-    "pages/0706/oc/oc"
+    "pages/0508/uvlo/uvlo",
+    "pages/0706/oc/oc",
+    "pages/0706/cs/cs"
   ],
   "requiredPrivateInfos": [
     "chooseAddress"
