@@ -1,5 +1,15 @@
 import { fetchHome } from '../../services/home/home';
 import Toast from 'tdesign-miniprogram/toast/index';
+const calcListMap = {
+  "通用": [
+    { "title": "BUCK 输入纹波", "tags": ["BUCK", "DC-DC"], "page": "/pages/buckvin/buckvin" },
+    { "title": "BUCK 输出纹波", "tags": ["BUCK", "DC-DC"], "page": "/pages/buck/buck" }],
+  "LDO": [
+    { "title": "并联电阻计算器", "tags": ["电路基础"], "page": "/pages/resistor/resistor" },
+    { "title": "输出电压计算（基准电压）", "tags": ["电路基础"], "page": "/pages/vout/vout" },
+    { "title": "0508 欠压保护", "tags": ["芯片"], "page": "/pages/0508uvlo/0508uvlo" },
+  ]
+}
 
 Page({
   data: {
@@ -13,16 +23,15 @@ Page({
     interval: 5000,
     navigation: { type: 'dots' },
     swiperImageProps: { mode: 'scaleToFill' },
-  },
-
-  privateData: {
     tabIndex: 0,
   },
 
   onShow() {
     // this.getTabBar().init();
   },
+  onShareAppMessage() {
 
+  },
   onLoad() {
     this.init();
   },
@@ -47,36 +56,28 @@ Page({
         imgSrcs: swiper,
         pageLoading: false,
       });
-      this.loadGoodsList(true);
+      this.loadCalcList("通用", true);
     });
   },
 
   tabChangeHandle(e) {
-    this.privateData.tabIndex = e.detail;
-    this.loadGoodsList(true);
+    this.tabIndex = e.detail;
+    this.loadCalcList(this.tabIndex.label, true);
   },
 
   onReTry() {
-    this.loadGoodsList();
+    this.loadCalcList("通用", false);
   },
 
 
-  async loadGoodsList(fresh = false) {
-    let list = [
-      { "title": "BUCK 输入纹波", "tags": ["BUCK", "DC-DC"], "page": "/pages/buckvin/buckvin" },
-      { "title": "BUCK 输出纹波", "tags": ["BUCK", "DC-DC"], "page": "/pages/buck/buck" },
-      { "title": "并联电阻计算器", "tags": ["电路基础"], "page": "/pages/resistor/resistor" },
-      { "title": "输出电压计算（基准电压）", "tags": ["电路基础"], "page": "/pages/vout/vout" },
-      { "title": "0508 欠压保护", "tags": ["芯片"], "page": "/pages/0508uvlo/0508uvlo" },
-
-    ]
+  async loadCalcList(label, fresh) {
     if (fresh) {
       wx.pageScrollTo({
         scrollTop: 0,
       });
     }
     this.setData({
-      goodsList: list,
+      goodsList: calcListMap[label],
     });
 
   },

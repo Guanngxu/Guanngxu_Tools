@@ -1,16 +1,11 @@
-<view
-  id="{{independentID}}"
-  class="goods-card"
-  bind:tap="clickHandle"
-  data-goods="{{ goods }}"
->
-	<view class="goods-card__main">
-		<view class="goods-card__body">
-			<view class="goods-card__upper">
-				<view wx:if="{{ goods.title }}" class="goods-card__title">
-					{{ goods.title }}
-				</view>
-				<view wx:if="{{ goods.tags && !!goods.tags.length }}" class="goods-card__tags">
+<view id="{{independentID}}" class="goods-card" bind:tap="clickHandle" data-goods="{{ goods }}">
+  <view class="goods-card__main">
+    <view class="goods-card__body">
+      <view class="goods-card__upper">
+        <view wx:if="{{ goods.title }}" class="goods-card__title">
+          {{ goods.title }}
+        </view>
+        <!-- <view wx:if="{{ goods.tags && !!goods.tags.length }}" class="goods-card__tags">
 					<view
 					  wx:for="{{ goods.tags }}"
 					  wx:key="index"
@@ -20,9 +15,8 @@
 					>
 						{{tag}}
 					</view>
-				</view>
-			</view>
-		</view>
-	</view>
+				</view> -->
+      </view>
+    </view>
+  </view>
 </view>
-

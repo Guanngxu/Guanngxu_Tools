@@ -9,7 +9,7 @@ function mockFetchHome() {
       swiper: genSwiperImageList(),
       tabList: [
         {
-          text: 'BUCK电路',
+          text: '通用',
           key: 0,
         },
         {
