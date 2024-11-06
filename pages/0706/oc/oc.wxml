@@ -1,0 +1,21 @@
+<view class="input-data">
+  <t-input model:value="{{Ilim}}" placeholder="期望过流保护点 Ilim" type="digit" tips="期望过流保护点 Ilim，单位：A" />
+</view>
+
+<view class="compute-button">
+  <t-button bind:tap="compute_click" size="large" theme="light" variant="outline" block>计算 IL 对地电阻</t-button>
+</view>
+<view class="compute-result">
+  <t-input disabled value="{{RlimResult}}" placeholder="IL 引脚对地电阻" type="digit" tips="IL 引脚对地电阻，单位：kohm" />
+</view>
+
+<view class="input-data">
+  <t-input model:value="{{Rlim}}" placeholder="IL 引脚对地电阻值" type="digit" tips="IL 引脚对地电阻值 Rlim，单位：kohm" />
+</view>
+
+<view class="compute-button">
+  <t-button bind:tap="compute_click" size="large" theme="light" variant="outline" block>计算过流保护值</t-button>
+</view>
+<view class="compute-result">
+  <t-input disabled value="{{IlimResult}}" placeholder="过流保护点" type="digit" tips="过流保护点，单位：A" />
+</view>

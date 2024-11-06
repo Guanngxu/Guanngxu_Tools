@@ -15,6 +15,10 @@ function mockFetchHome() {
         {
           text: 'LDO',
           key: 1,
+        },
+        {
+          text: '0706',
+          key: 2,
         }
       ],
       activityImg: `${cdnBase}/activity/banner.png`,

@@ -8,6 +8,9 @@ const calcListMap = {
     { "title": "并联电阻计算器", "tags": ["电路基础"], "page": "/pages/resistor/resistor" },
     { "title": "输出电压计算（基准电压）", "tags": ["电路基础"], "page": "/pages/vout/vout" },
     { "title": "0508 欠压保护", "tags": ["芯片"], "page": "/pages/0508uvlo/0508uvlo" },
+  ],
+  "0706": [
+    { "title": "过流保护", "tags": ["电子保险丝"], "page": "/pages/0706/oc/oc" },
   ]
 }
 
