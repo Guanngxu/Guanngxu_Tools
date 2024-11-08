@@ -5,7 +5,10 @@
     "pages/buck/deltavin/deltavin",
     "pages/buck/deltail/deltail",
     "pages/buck/lout/lout",
+    "pages/4644/startup/startup",
+    "pages/4644/vout/vout",
     "pages/0508/uvlo/uvlo",
+    "pages/0508/startup/startup",
     "pages/0706/oc/oc",
     "pages/0706/cs/cs"
   ],
