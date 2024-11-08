@@ -4,10 +4,10 @@ const calcListMap = {
   "通用": [
     { "title": "BUCK 输入纹波", "tags": ["BUCK", "DC-DC"], "page": "/pages/buckvin/buckvin" },
     { "title": "BUCK 输出纹波", "tags": ["BUCK", "DC-DC"], "page": "/pages/buck/buck" }],
-  "LDO": [
-    { "title": "并联电阻计算器", "tags": ["电路基础"], "page": "/pages/resistor/resistor" },
-    { "title": "输出电压计算（基准电压）", "tags": ["电路基础"], "page": "/pages/vout/vout" }
-  ],
+  // "LDO": [
+  //   { "title": "并联电阻计算器", "tags": ["电路基础"], "page": "/pages/resistor/resistor" },
+  //   { "title": "输出电压计算（基准电压）", "tags": ["电路基础"], "page": "/pages/vout/vout" }
+  // ],
   "0508": [
     { "title": "欠压保护", "tags": ["DC-DC"], "page": "/pages/0508/uvlo/uvlo" }
   ],
@@ -52,18 +52,23 @@ Page({
 
   loadHomePage() {
     wx.stopPullDownRefresh();
-
+    let tabList = [];
+    let index = 0;
+    for (let key in calcListMap) {
+      tabList.push({
+        text: key,
+        key: index,
+      });
+      index++;
+    }
     this.setData({
       pageLoading: true,
+      tabList,
+      imgSrcs: "https://we-retail-static-1300977798.cos.ap-guangzhou.myqcloud.com/retail-mp/activity/banner.png",
+      pageLoading: false,
     });
-    fetchHome().then(({ swiper, tabList }) => {
-      this.setData({
-        tabList,
-        imgSrcs: swiper,
-        pageLoading: false,
-      });
-      this.loadCalcList("通用", true);
-    });
+
+    this.loadCalcList(tabList[0]["text"], true)
   },
 
   tabChangeHandle(e) {

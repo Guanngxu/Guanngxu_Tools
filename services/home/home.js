@@ -24,22 +24,22 @@ function mockFetchHome() {
           text: '0508',
           key: 3,
         },
-        {
-          text: '4644',
-          key: 4,
-        },
-        {
-          text: '2630',
-          key: 5,
-        },
-        {
-          text: '3301',
-          key: 6,
-        },
-        {
-          text: '1101',
-          key: 7,
-        }
+        // {
+        //   text: '4644',
+        //   key: 4,
+        // },
+        // {
+        //   text: '2630',
+        //   key: 5,
+        // },
+        // {
+        //   text: '3301',
+        //   key: 6,
+        // },
+        // {
+        //   text: '1101',
+        //   key: 7,
+        // }
       ],
       activityImg: `${cdnBase}/activity/banner.png`,
     };

@@ -3,7 +3,7 @@ Page({
     Vcs: 4,
     Rcs: 100,
 
-    Iout: 3.10,
+    Iout: 2.44,
   },
 
   compute_click() {
@@ -21,12 +21,12 @@ Page({
     const promise = new Promise(resolve => {
       setTimeout(() => {
         resolve({
-          title: '0706 过流保护'
+          title: '0706 电流采样'
         })
       }, 2000)
     })
     return {
-      title: '0706 过流保护',
+      title: '0706 电流采样',
       path: '/pages/0706/oc/oc',
       promise
     }

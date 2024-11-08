@@ -3,8 +3,8 @@ Page({
     R1: 10,
     R2: 3.9,
 
-    VStart: 4,
-    VStop: 3,
+    VStart: 3.92,
+    VStop: 3.53,
   },
 
   compute_click() {
@@ -30,7 +30,7 @@ Page({
     })
     return {
       title: '0508 欠压保护',
-      path: '/pages/0508uvlo/0508uvlo',
+      path: '/pages/0508/uvlo/uvlo',
       promise
     }
   }
