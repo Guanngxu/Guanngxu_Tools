@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "BUCK 输入纹波计算",
+  "navigationBarTitleText": "BUCK 电路输出纹波",
   "onReachBottomDistance": 10,
   "backgroundTextStyle": "light",
   "enablePullDownRefresh": true,

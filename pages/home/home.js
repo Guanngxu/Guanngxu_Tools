@@ -1,13 +1,10 @@
-import { fetchHome } from '../../services/home/home';
 import Toast from 'tdesign-miniprogram/toast/index';
 const calcListMap = {
-  "通用": [
-    { "title": "BUCK 输入纹波", "tags": ["BUCK", "DC-DC"], "page": "/pages/buckvin/buckvin" },
-    { "title": "BUCK 输出纹波", "tags": ["BUCK", "DC-DC"], "page": "/pages/buck/buck" }],
-  // "LDO": [
-  //   { "title": "并联电阻计算器", "tags": ["电路基础"], "page": "/pages/resistor/resistor" },
-  //   { "title": "输出电压计算（基准电压）", "tags": ["电路基础"], "page": "/pages/vout/vout" }
-  // ],
+  "BUCK": [
+    { "title": "输入纹波", "tags": ["BUCK"], "page": "/pages/buck/deltavin/deltavin" },
+    { "title": "输出纹波", "tags": ["BUCK"], "page": "/pages/buck/deltavout/deltavout" },
+    { "title": "电感纹波电流", "tags": ["BUCK"], "page": "/pages/buck/deltail/deltail" },
+    { "title": "输出电感", "tags": ["BUCK"], "page": "/pages/buck/lout/lout" }],
   "0508": [
     { "title": "欠压保护", "tags": ["DC-DC"], "page": "/pages/0508/uvlo/uvlo" }
   ],
@@ -75,11 +72,6 @@ Page({
     this.tabIndex = e.detail;
     this.loadCalcList(this.tabIndex.label, true);
   },
-
-  onReTry() {
-    this.loadCalcList("通用", false);
-  },
-
 
   async loadCalcList(label, fresh) {
     if (fresh) {

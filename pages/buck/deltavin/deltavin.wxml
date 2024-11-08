@@ -1,0 +1,19 @@
+<view class="input-data">
+  <t-input model:value="{{Vin}}" placeholder="输入电压 Vin" type="digit" tips="输入电压 Vin，单位：V" />
+  <t-input model:value="{{Vout}}" placeholder="输出电压 Vout" type="digit" tips="输出电压 Vout，单位：V" />
+  <t-input model:value="{{Iout}}" placeholder="输出电流 Iout" type="digit" tips="输出电流 Iout，单位：A" />
+  <t-input model:value="{{Switchf}}" placeholder="开关频率 f" type="digit" tips="开关频率 f，单位：kHz" />
+  <t-input model:value="{{PowerL}}" placeholder="功率电感 L" type="digit" tips="输出电感 L，单位：uH" />
+  <t-input model:value="{{Cin}}" placeholder="输入电容 Cin" type="digit" tips="输入电容 Cin，单位：uF" />
+  <t-input model:value="{{ESR}}" placeholder="输入电容 ESR" type="digit" tips="输入电容 ESR，单位：mohm" />
+</view>
+
+<view class="compute-button">
+  <t-button bind:tap="compute_click" size="large" theme="light" variant="outline" block>计算</t-button>
+</view>
+<view class="compute-result">
+  <t-input disabled value="{{Iripple}}" placeholder="电感纹波电流" type="digit" tips="电感纹波电流，单位：A" />
+  <t-input disabled value="{{Vin_rippleESR}}" placeholder="ESR 引起的纹波" type="digit" tips="ESR 引起的纹波，单位：mV" />
+  <t-input disabled value="{{Vin_rippleC}}" placeholder="电容引起的纹波" type="digit" tips="电容引起的纹波，单位：mV" />
+  <t-input disabled value="{{Vin_ripple}}" placeholder="输入纹波" type="digit" tips="输入纹波，单位：mV" />
+</view>

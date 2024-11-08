@@ -1,10 +1,10 @@
 {
   "pages": [
     "pages/home/home",
-    "pages/buck/buck",
-    "pages/buckvin/buckvin",
-    "pages/resistor/resistor",
-    "pages/vout/vout",
+    "pages/buck/deltavout/deltavout",
+    "pages/buck/deltavin/deltavin",
+    "pages/buck/deltail/deltail",
+    "pages/buck/lout/lout",
     "pages/0508/uvlo/uvlo",
     "pages/0706/oc/oc",
     "pages/0706/cs/cs"

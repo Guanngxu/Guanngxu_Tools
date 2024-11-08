@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "电路并联阻值计算",
+  "navigationBarTitleText": "BUCK 电路输出电感纹波电流",
   "onReachBottomDistance": 10,
   "backgroundTextStyle": "light",
   "enablePullDownRefresh": true,

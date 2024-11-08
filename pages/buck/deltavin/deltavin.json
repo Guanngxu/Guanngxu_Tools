@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "芯片输出电压计算",
+  "navigationBarTitleText": "BUCK 电路输入纹波",
   "onReachBottomDistance": 10,
   "backgroundTextStyle": "light",
   "enablePullDownRefresh": true,

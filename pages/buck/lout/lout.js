@@ -3,8 +3,8 @@ Page({
     Vin: 6.3,
     Vout: 3.3,
     Iout: 8,
-    rL: 0.2,
     fs: 500,
+    rL: 0.2,
 
     Lout: 1.96,
   },
@@ -13,10 +13,10 @@ Page({
     const Vin = Number(this.data.Vin);
     const Vout = Number(this.data.Vout);
     const Iout = Number(this.data.Iout);
-    const rL = Number(this.data.rL);
     const fs = Number(this.data.fs);
+    const rL = Number(this.data.rL);
 
-    const Lout = Vout * (1 - Vout / Vin) / Iout / rL / fs / 1000;
+    const Lout = Vout * (1 - Vout / Vin) / Iout / fs / 1000 / rL * 1000000;
 
     this.setData({
       Lout: Lout.toFixed(2),
@@ -27,13 +27,13 @@ Page({
     const promise = new Promise(resolve => {
       setTimeout(() => {
         resolve({
-          title: '0508 输出电感设计'
+          title: 'BUCK 电路输出电感'
         })
       }, 2000)
     })
     return {
-      title: '0508 输出电感设计',
-      path: '/pages/0508/lout/lout',
+      title: 'BUCK 电路输出电感',
+      path: '/pages/buck/lout/lout',
       promise
     }
   }

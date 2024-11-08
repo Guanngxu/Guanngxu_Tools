@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "0508 欠压保护",
+  "navigationBarTitleText": "BUCK 电路输出电感纹波电流",
   "onReachBottomDistance": 10,
   "backgroundTextStyle": "light",
   "enablePullDownRefresh": true,
