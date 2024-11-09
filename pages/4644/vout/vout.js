@@ -31,7 +31,7 @@ Page({
     })
     return {
       title: '4644 输出电压',
-      path: '/pages/4644/uvlo/uvlo',
+      path: '/pages/4644/vout/vout',
       promise
     }
   }
