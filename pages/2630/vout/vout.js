@@ -1,18 +1,18 @@
 Page({
   data: {
-    Vout: 3.3,
-    Rfb: 13.3,
+    Vout: 1.8,
+    Rfb: 30.58,
 
-    VoutResult: 3.31,
-    RfbResult: 13.34,
+    VoutResult: 1.80,
+    RfbResult: 30.58,
   },
 
   compute_click() {
     const Vout = Number(this.data.Vout);
     const Rfb = Number(this.data.Rfb);
 
-    const VoutResult = 0.597 * (60.4 + Rfb) / Rfb;
-    const RfbResult = 0.597 * 60.4 / (Vout - 0.597);
+    const VoutResult = 0.605 * (60.4 + Rfb) / Rfb;
+    const RfbResult = 0.605 * 60.4 / (Vout - 0.605);
 
 
     this.setData({
@@ -25,13 +25,13 @@ Page({
     const promise = new Promise(resolve => {
       setTimeout(() => {
         resolve({
-          title: '4644 输出电压'
+          title: '2630 输出电压'
         })
       }, 2000)
     })
     return {
-      title: '4644 输出电压',
-      path: '/pages/4644/uvlo/uvlo',
+      title: '2630 输出电压',
+      path: '/pages/2630/vout/vout',
       promise
     }
   }

@@ -3,7 +3,7 @@
 </view>
 
 <view class="compute-button">
-  <t-button bind:tap="compute_click" size="large" theme="light" variant="outline" block>计算</t-button>
+  <t-button bind:tap="compute_click" size="large" theme="light" variant="outline" block>计算缓启动时间</t-button>
 </view>
 <view class="compute-result">
   <t-input disabled value="{{tss}}" placeholder="缓启动时间" type="digit" tips="缓启动时间，单位：ms" />
