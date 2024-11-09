@@ -7,6 +7,8 @@
     "pages/buck/lout/lout",
     "pages/4644/startup/startup",
     "pages/4644/vout/vout",
+    "pages/2600/vout/vout",
+    "pages/2600/startup/startup",
     "pages/2630/vout/vout",
     "pages/2630/startup/startup",
     "pages/1101/startup/startup",
@@ -14,6 +16,8 @@
     "pages/0508/uvlo/uvlo",
     "pages/0508/vout/vout",
     "pages/0508/startup/startup",
+    "pages/1206/vout/vout",
+    "pages/1206/startup/startup",
     "pages/0706/oc/oc",
     "pages/0706/cs/cs"
   ],

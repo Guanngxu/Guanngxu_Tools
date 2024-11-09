@@ -10,6 +10,10 @@ const calcListMap = {
     { "title": "缓启动时间", "tags": ["DC-DC"], "page": "/pages/0508/startup/startup" },
     { "title": "输出电压", "tags": ["DC-DC"], "page": "/pages/0508/vout/vout" },
   ],
+  "1206": [
+    { "title": "缓启动时间", "tags": ["DC-DC"], "page": "/pages/1206/startup/startup" },
+    { "title": "输出电压", "tags": ["DC-DC"], "page": "/pages/1206/vout/vout" },
+  ],
   "4644": [
     { "title": "输出电压", "tags": ["DC-DC"], "page": "/pages/4644/vout/vout" },
     { "title": "缓启动时间", "tags": ["DC-DC"], "page": "/pages/4644/startup/startup" }
@@ -17,7 +21,10 @@ const calcListMap = {
   "2630": [
     { "title": "输出电压", "tags": ["DC-DC"], "page": "/pages/2630/vout/vout" },
     { "title": "缓启动时间", "tags": ["DC-DC"], "page": "/pages/2630/startup/startup" }
-
+  ],
+  "2600": [
+    { "title": "输出电压", "tags": ["DC-DC"], "page": "/pages/2600/vout/vout" },
+    { "title": "缓启动时间", "tags": ["DC-DC"], "page": "/pages/2600/startup/startup" }
   ],
   "1101": [
     { "title": "缓启动时间", "tags": ["DC-DC"], "page": "/pages/1101/startup/startup" },

@@ -1,0 +1,20 @@
+<!-- 根据电压算电阻 -->
+<view class="input-data">
+  <t-input model:value="{{Vout}}" placeholder="期望输出电压" type="digit" tips="期望输出电压，单位：V" />
+</view>
+<view class="compute-button">
+  <t-button bind:tap="compute_click" size="large" theme="light" variant="outline" block>计算 FB 对地电阻</t-button>
+</view>
+<view class="compute-result">
+  <t-input disabled value="{{RfbResult}}" placeholder="FB 对地电阻" type="digit" tips="FB 对地电阻，单位：kohm" />
+</view>
+<!-- 根据电阻算电压 -->
+<view class="input-data">
+  <t-input model:value="{{Rfb}}" placeholder="FB 对地电阻" type="digit" tips="FB 对地电阻，单位：kohm" />
+</view>
+<view class="compute-button">
+  <t-button bind:tap="compute_click" size="large" theme="light" variant="outline" block>计算输出电压</t-button>
+</view>
+<view class="compute-result">
+  <t-input disabled value="{{VoutResult}}" placeholder="输出电压" type="digit" tips="输出电压，单位：V" />
+</view>
