@@ -1,6 +1,6 @@
 {
   "pages": [
-    "pages/home/home",
+    "pages/index/index",
     "pages/buck/deltavout/deltavout",
     "pages/buck/deltavin/deltavin",
     "pages/buck/deltail/deltail",
