@@ -1,0 +1,23 @@
+<!-- 根据频率计算电阻 -->
+<view class="input-data">
+  <t-input model:value="{{Fsw}}" placeholder="设置开关频率" type="digit" tips="设置开关频率，单位：kHz" />
+</view>
+
+<view class="compute-button">
+  <t-button bind:tap="compute_click" size="large" theme="light" variant="outline" block>计算 RT 对地电阻</t-button>
+</view>
+<view class="compute-result">
+  <t-input disabled value="{{RTResult}}" placeholder="RT 对地电阻" type="digit" tips="RT 对地电阻，单位：kohm" />
+</view>
+
+<!-- 根据电阻计算频率 -->
+<view class="input-data">
+  <t-input model:value="{{RT}}" placeholder="RT 对地电阻阻值" type="digit" tips="RT 对地电阻阻值，单位：kohm" />
+</view>
+
+<view class="compute-button">
+  <t-button bind:tap="compute_click" size="large" theme="light" variant="outline" block>计算开关频率</t-button>
+</view>
+<view class="compute-result">
+  <t-input disabled value="{{FswResult}}" placeholder="开关工作频率" type="digit" tips="开关工作频率，单位：kHz" />
+</view>

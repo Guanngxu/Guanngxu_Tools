@@ -24,7 +24,8 @@ const calcListMap = {
   ],
   "2600": [
     { "title": "输出电压", "tags": ["DC-DC"], "page": "/pages/2600/vout/vout" },
-    { "title": "缓启动时间", "tags": ["DC-DC"], "page": "/pages/2600/startup/startup" }
+    { "title": "缓启动时间", "tags": ["DC-DC"], "page": "/pages/2600/startup/startup" },
+    { "title": "开关频率设置", "tags": ["DC-DC"], "page": "/pages/2600/freq/freq" }
   ],
   "1101": [
     { "title": "缓启动时间", "tags": ["DC-DC"], "page": "/pages/1101/startup/startup" },
