@@ -2,7 +2,7 @@ Page({
   data: {
     Css: 10,
 
-    tss: 2.24,
+    tss: 2.42,
   },
 
   compute_click() {
