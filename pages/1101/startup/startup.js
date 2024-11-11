@@ -8,7 +8,7 @@ Page({
   compute_click() {
     const Css = Number(this.data.Css);
 
-    const tss = Css * 0.605 / 2.7;
+    const tss = Css * 0.605 / 2.5;
 
     this.setData({
       tss: tss.toFixed(2),
