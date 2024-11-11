@@ -23,7 +23,12 @@
     "pages/1206/vout/vout",
     "pages/1206/startup/startup",
     "pages/0706/oc/oc",
-    "pages/0706/cs/cs"
+    "pages/0706/cs/cs",
+    "pages/0706/startup/startup",
+    "pages/0702/startup/startup",
+    "pages/0702/oc/oc",
+    "pages/0702/cs/cs",
+    "pages/0702/octime/octime"
   ],
   "requiredPrivateInfos": [
     "chooseAddress"

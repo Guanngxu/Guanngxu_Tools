@@ -1,0 +1,11 @@
+<view class="input-data">
+  <t-input model:value="{{Css}}" placeholder="缓启动电容" type="digit" tips="缓启动电容，单位：nF" />
+  <t-input model:value="{{Vout}}" placeholder="输出电压" type="digit" tips="输出电压，单位：V" />
+</view>
+
+<view class="compute-button">
+  <t-button bind:tap="compute_click" size="large" theme="light" variant="outline" block>计算输出上升时间</t-button>
+</view>
+<view class="compute-result">
+  <t-input disabled value="{{tss}}" placeholder="输出上升时间" type="digit" tips="输出上升时间，单位：ms" />
+</view>

@@ -1,18 +1,18 @@
 Page({
   data: {
-    Ilim: 4,
-    Rlim: 100,
+    Ilim: 1.5,
+    Rlim: 47,
 
-    IlimResult: 3.10,
-    RlimResult: 77.47,
+    IlimResult: 1.62,
+    RlimResult: 50.66,
   },
 
   compute_click() {
     const Ilim = Number(this.data.Ilim);
     const Rlim = Number(this.data.Rlim);
 
-    const RlimResult = 5.08 * 61000 / Ilim / 1000;
-    const IlimResult = 5.08 * 61000 / Rlim / 1000;
+    const RlimResult = 7.45 * 10200 / Ilim / 1000;
+    const IlimResult = 7.45 * 10200 / Rlim / 1000;
 
     this.setData({
       RlimResult: RlimResult.toFixed(2),
@@ -24,13 +24,13 @@ Page({
     const promise = new Promise(resolve => {
       setTimeout(() => {
         resolve({
-          title: '0706 过流保护'
+          title: '0702 过流保护'
         })
       }, 2000)
     })
     return {
-      title: '0706 过流保护',
-      path: '/pages/0706/cs/cs',
+      title: '0702 过流保护',
+      path: '/pages/0702/oc/oc',
       promise
     }
   }

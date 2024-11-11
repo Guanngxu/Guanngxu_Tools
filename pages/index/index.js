@@ -37,6 +37,13 @@ const calcListMap = {
   "0706": [
     { "title": "过流保护", "tags": ["电子保险丝"], "page": "/pages/0706/oc/oc" },
     { "title": "电流采样", "tags": ["电子保险丝"], "page": "/pages/0706/cs/cs" },
+    { "title": "输出上升时间", "tags": ["电子保险丝"], "page": "/pages/0706/startup/startup" },
+  ],
+  "0702": [
+    { "title": "输出上升时间", "tags": ["电子保险丝"], "page": "/pages/0702/startup/startup" },
+    { "title": "过流保护", "tags": ["电子保险丝"], "page": "/pages/0702/oc/oc" },
+    { "title": "电流采样", "tags": ["电子保险丝"], "page": "/pages/0702/cs/cs" },
+    { "title": "过流保护时间", "tags": ["电子保险丝"], "page": "/pages/0702/octime/octime" },
   ]
 }
 

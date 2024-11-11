@@ -1,16 +1,16 @@
 Page({
   data: {
-    Vcs: 4,
-    Rcs: 100,
+    Vcs: 2,
+    Rcs: 15,
 
-    Iout: 2.44,
+    Iout: 1.36,
   },
 
   compute_click() {
     const Vcs = Number(this.data.Vcs);
     const Rcs = Number(this.data.Rcs);
 
-    const Iout = Vcs * 61000 / Rcs / 1000;
+    const Iout = Vcs * 10200 / Rcs / 1000;
 
     this.setData({
       Iout: Iout.toFixed(2)
@@ -21,13 +21,13 @@ Page({
     const promise = new Promise(resolve => {
       setTimeout(() => {
         resolve({
-          title: '0706 电流采样'
+          title: '0702 电流采样'
         })
       }, 2000)
     })
     return {
-      title: '0706 电流采样',
-      path: '/pages/0706/cs/cs',
+      title: '0702 电流采样',
+      path: '/pages/0702/cs/cs',
       promise
     }
   }

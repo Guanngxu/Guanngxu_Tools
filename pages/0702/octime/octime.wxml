@@ -1,0 +1,23 @@
+<!-- 根据电容计算过流保护时间 -->
+<view class="input-data">
+  <t-input model:value="{{Cilt}}" placeholder="ILT 引脚对地电容" type="digit" tips="ILT 引脚对地电容，单位：pF" />
+</view>
+
+<view class="compute-button">
+  <t-button bind:tap="compute_click" size="large" theme="light" variant="outline" block>过流保护时间</t-button>
+</view>
+<view class="compute-result">
+  <t-input disabled value="{{TonResult}}" placeholder="过流保护时间" type="digit" tips="过流保护时间，单位：ms" />
+</view>
+
+<!-- 根据时间计算电阻 -->
+<view class="input-data">
+  <t-input model:value="{{Ton}}" placeholder="期望过流保护时间" type="digit" tips="期望过流保护时间，单位：ms" />
+</view>
+
+<view class="compute-button">
+  <t-button bind:tap="compute_click" size="large" theme="light" variant="outline" block>计算 ILT 引脚对地电容</t-button>
+</view>
+<view class="compute-result">
+  <t-input disabled value="{{CiltResult}}" placeholder="ILT 引脚对地电容" type="digit" tips="ILT 引脚对地电容，单位：pF" />
+</view>
