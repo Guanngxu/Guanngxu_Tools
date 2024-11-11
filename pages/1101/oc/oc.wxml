@@ -1,0 +1,23 @@
+<!-- 根据过流保护点计算电阻 -->
+<view class="input-data">
+  <t-input model:value="{{Icl}}" placeholder="期望过流保护点 Icl" type="digit" tips="期望过流保护点 Icl，单位：A" />
+</view>
+
+<view class="compute-button">
+  <t-button bind:tap="compute_click" size="large" theme="light" variant="outline" block>计算 PCL 对地电阻</t-button>
+</view>
+<view class="compute-result">
+  <t-input disabled value="{{RpclResult}}" placeholder="PCL 引脚对地电阻" type="digit" tips="PCL 引脚对地电阻，单位：kohm" />
+</view>
+
+<!-- 根据电阻计算过流保护点 -->
+<view class="input-data">
+  <t-input model:value="{{Rpcl}}" placeholder="PCL 引脚对地电阻值" type="digit" tips="PCL 引脚对地电阻值 Rpcl，单位：kohm" />
+</view>
+
+<view class="compute-button">
+  <t-button bind:tap="compute_click" size="large" theme="light" variant="outline" block>计算过流保护值</t-button>
+</view>
+<view class="compute-result">
+  <t-input disabled value="{{IclResult}}" placeholder="过流保护点" type="digit" tips="过流保护点，单位：A" />
+</view>

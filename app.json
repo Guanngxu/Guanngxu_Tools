@@ -14,6 +14,7 @@
     "pages/2630/startup/startup",
     "pages/1101/startup/startup",
     "pages/1101/vout/vout",
+    "pages/1101/oc/oc",
     "pages/0508/freq/freq",
     "pages/0508/uvlo/uvlo",
     "pages/0508/vout/vout",

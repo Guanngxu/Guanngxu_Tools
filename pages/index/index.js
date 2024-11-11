@@ -31,7 +31,8 @@ const calcListMap = {
   ],
   "1101": [
     { "title": "缓启动时间", "tags": ["DC-DC"], "page": "/pages/1101/startup/startup" },
-    { "title": "输出电压", "tags": ["DC-DC"], "page": "/pages/1101/vout/vout" }
+    { "title": "输出电压", "tags": ["DC-DC"], "page": "/pages/1101/vout/vout" },
+    { "title": "过流保护", "tags": ["DC-DC"], "page": "/pages/1101/oc/oc" }
   ],
   "0706": [
     { "title": "过流保护", "tags": ["电子保险丝"], "page": "/pages/0706/oc/oc" },
