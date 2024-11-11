@@ -82,15 +82,25 @@ Page({
 
   loadHomePage() {
     wx.stopPullDownRefresh();
-    let tabList = [];
-    let index = 0;
-    for (let key in calcListMap) {
-      tabList.push({
-        text: key,
-        key: index,
-      });
-      index++;
-    }
+    let tabList = [
+      { "text": "0702", "key": 0 },
+      { "text": "4644", "key": 1 },
+      { "text": "2600", "key": 2 },
+      { "text": "1101", "key": 3 },
+      { "text": "2630", "key": 4 },
+      { "text": "0508", "key": 5 },
+      { "text": "1206", "key": 6 },
+      { "text": "0706", "key": 7 },
+      { "text": "BUCK", "key": 8 },
+    ];
+    // let index = 0;
+    // for (let key in calcListMap) {
+    //   tabList.push({
+    //     text: key,
+    //     key: index,
+    //   });
+    //   index++;
+    // }
     this.setData({
       pageLoading: true,
       tabList,
