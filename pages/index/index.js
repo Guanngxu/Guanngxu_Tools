@@ -9,10 +9,12 @@ const calcListMap = {
     { "title": "欠压保护", "tags": ["DC-DC"], "page": "/pages/0508/uvlo/uvlo" },
     { "title": "缓启动时间", "tags": ["DC-DC"], "page": "/pages/0508/startup/startup" },
     { "title": "输出电压", "tags": ["DC-DC"], "page": "/pages/0508/vout/vout" },
+    { "title": "开关频率设置", "tags": ["DC-DC"], "page": "/pages/0508/freq/freq" }
   ],
   "1206": [
     { "title": "缓启动时间", "tags": ["DC-DC"], "page": "/pages/1206/startup/startup" },
     { "title": "输出电压", "tags": ["DC-DC"], "page": "/pages/1206/vout/vout" },
+    { "title": "开关频率设置", "tags": ["DC-DC"], "page": "/pages/1206/freq/freq" }
   ],
   "4644": [
     { "title": "输出电压", "tags": ["DC-DC"], "page": "/pages/4644/vout/vout" },
