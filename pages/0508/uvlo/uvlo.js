@@ -24,12 +24,12 @@ Page({
     const promise = new Promise(resolve => {
       setTimeout(() => {
         resolve({
-          title: '0508 欠压保护'
+          title: 'RSS0508IRH/HRH 欠压保护'
         })
       }, 2000)
     })
     return {
-      title: '0508 欠压保护',
+      title: 'RSS0508IRH/HRH 欠压保护',
       path: '/pages/0508/uvlo/uvlo',
       promise
     }

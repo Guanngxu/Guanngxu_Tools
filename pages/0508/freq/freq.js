@@ -25,12 +25,12 @@ Page({
     const promise = new Promise(resolve => {
       setTimeout(() => {
         resolve({
-          title: '0508 开关频率设置'
+          title: 'RSS0508IRH/HRH 开关频率设置'
         })
       }, 2000)
     })
     return {
-      title: '0508 开关频率设置',
+      title: 'RSS0508IRH/HRH 开关频率设置',
       path: '/pages/0508/freq/freq',
       promise
     }

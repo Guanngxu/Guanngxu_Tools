@@ -24,12 +24,12 @@ Page({
     const promise = new Promise(resolve => {
       setTimeout(() => {
         resolve({
-          title: '0702 过流保护'
+          title: 'RSSW0702IRH 过流保护'
         })
       }, 2000)
     })
     return {
-      title: '0702 过流保护',
+      title: 'RSSW0702IRH 过流保护',
       path: '/pages/0702/oc/oc',
       promise
     }

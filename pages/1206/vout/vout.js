@@ -28,12 +28,12 @@ Page({
     const promise = new Promise(resolve => {
       setTimeout(() => {
         resolve({
-          title: '1206 输出电压'
+          title: 'RSS1206HRH/IRH 输出电压'
         })
       }, 2000)
     })
     return {
-      title: '1206 输出电压',
+      title: 'RSS1206HRH/IRH 输出电压',
       path: '/pages/1206/vout/vout',
       promise
     }

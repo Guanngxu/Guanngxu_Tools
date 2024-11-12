@@ -21,12 +21,12 @@ Page({
     const promise = new Promise(resolve => {
       setTimeout(() => {
         resolve({
-          title: '0706 电流采样'
+          title: 'RSSW0706IRH/HRH 电流采样'
         })
       }, 2000)
     })
     return {
-      title: '0706 电流采样',
+      title: 'RSSW0706IRH/HRH 电流采样',
       path: '/pages/0706/cs/cs',
       promise
     }

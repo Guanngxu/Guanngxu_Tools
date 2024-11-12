@@ -21,12 +21,12 @@ Page({
     const promise = new Promise(resolve => {
       setTimeout(() => {
         resolve({
-          title: '0702 输出上升时间'
+          title: 'RSSW0702IRH 输出上升时间'
         })
       }, 2000)
     })
     return {
-      title: '0702 输出上升时间',
+      title: 'RSSW0702IRH 输出上升时间',
       path: '/pages/0702/startup/startup',
       promise
     }
