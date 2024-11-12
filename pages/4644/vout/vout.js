@@ -1,6 +1,8 @@
 Page({
   data: {
     Vout: 3.3,
+    ChannelVout: 1,
+    ChannelRfb: 1,
     Rfb: 13.3,
 
     VoutResult: 3.31,
@@ -10,9 +12,11 @@ Page({
   compute_click() {
     const Vout = Number(this.data.Vout);
     const Rfb = Number(this.data.Rfb);
+    const ChannelVout = Number(this.data.ChannelVout);
+    const ChannelRfb = Number(this.data.ChannelRfb);
 
-    const VoutResult = 0.597 * (60.4 + Rfb) / Rfb;
-    const RfbResult = 0.597 * 60.4 / (Vout - 0.597);
+    const VoutResult = 0.597 * (60.4 + Rfb * ChannelRfb) / Rfb / ChannelRfb;
+    const RfbResult = 0.597 * 60.4 / (Vout - 0.597) / ChannelVout;
 
 
     this.setData({
