@@ -1,0 +1,14 @@
+<!-- 根据电流计算电阻 -->
+<view class="input-data">
+  <t-input model:value="{{freq}}" type="digit" />
+  <t-dropdown-menu>
+    <t-dropdown-item options="{{freqOptions}}" value="{{freqOptionsValue}}" bindchange="freqOptionChange" />
+  </t-dropdown-menu>
+</view>
+
+<view class="compute-button">
+  <t-button bind:tap="compute_click" size="large" theme="light" variant="outline" block>计算周期</t-button>
+</view>
+<view class="compute-result">
+  <t-input disabled value="{{periodResult}}" />
+</view>

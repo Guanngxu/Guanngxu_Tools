@@ -44,6 +44,9 @@ const calcListMap = {
     { "title": "过流保护", "tags": ["电子保险丝"], "page": "/pages/0702/oc/oc" },
     { "title": "电流采样", "tags": ["电子保险丝"], "page": "/pages/0702/cs/cs" },
     { "title": "过流保护时间", "tags": ["电子保险丝"], "page": "/pages/0702/octime/octime" },
+  ],
+  "频率周期": [
+    { "title": "频率周期", "tags": ["通用工具"], "page": "/pages/freq/f2s/f2s" },
   ]
 }
 
@@ -92,6 +95,7 @@ Page({
       { "text": "RSS1206HRH/IRH", "key": 6 },
       { "text": "RSSW0706IRH/HRH", "key": 7 },
       { "text": "BUCK", "key": 8 },
+      { "text": "频率周期", "key": 9 },
     ];
     // let index = 0;
     // for (let key in calcListMap) {
