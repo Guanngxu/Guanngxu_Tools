@@ -1,4 +1,4 @@
-<!-- 根据电流计算电阻 -->
+<!-- 根据频率计算周期 -->
 <view class="input-data">
   <t-input model:value="{{freq}}" type="digit" />
   <t-dropdown-menu>
@@ -11,4 +11,20 @@
 </view>
 <view class="compute-result">
   <t-input disabled value="{{periodResult}}" />
+</view>
+
+
+<!-- 根据周期计算频率 -->
+<view class="input-data">
+  <t-input model:value="{{period}}" type="digit" />
+  <t-dropdown-menu>
+    <t-dropdown-item options="{{periodOptions}}" value="{{periodOptionsValue}}" bindchange="periodOptionChange" />
+  </t-dropdown-menu>
+</view>
+
+<view class="compute-button">
+  <t-button bind:tap="compute_click" size="large" theme="light" variant="outline" block>计算频率</t-button>
+</view>
+<view class="compute-result">
+  <t-input disabled value="{{freqResult}}" />
 </view>
