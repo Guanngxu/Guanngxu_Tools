@@ -4,7 +4,7 @@
 </view>
 
 <view class="compute-button">
-  <t-button bind:tap="compute_click" size="large" theme="light" variant="outline" block>计算</t-button>
+  <t-button bind:tap="compute_click" size="large" theme="light" variant="outline" block>计算开启/停机电压</t-button>
 </view>
 <view class="compute-result">
   <t-input disabled value="{{VStart}}" placeholder="开启电压" type="digit" tips="开启电压，单位：V" />
