@@ -1,7 +1,7 @@
 import Toast from 'tdesign-miniprogram/toast/index';
 const calcListMap = {
   "BUCK": [
-    { "title": "输入纹波", "tags": ["BUCK"], "page": "/pages/buck/deltavin/deltavin" },
+    // { "title": "输入纹波", "tags": ["BUCK"], "page": "/pages/buck/deltavin/deltavin" },
     { "title": "输出纹波", "tags": ["BUCK"], "page": "/pages/buck/deltavout/deltavout" },
     { "title": "电感纹波电流", "tags": ["BUCK"], "page": "/pages/buck/deltail/deltail" },
     { "title": "输出电感", "tags": ["BUCK"], "page": "/pages/buck/lout/lout" }],
