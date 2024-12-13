@@ -1,23 +1,26 @@
 Page({
   data: {
-    Vout: 1.8,
-    Rfb: 30.58,
+    Vout: 1.0,
+    Rfb1: 10,
+    Rfb2: 15.2,
 
-    VoutResult: 1.80,
-    RfbResult: 30.58,
+    VoutResult: 1.0,
+    Ratio: "3.17 : 1",
   },
 
   compute_click() {
     const Vout = Number(this.data.Vout);
-    const Rfb = Number(this.data.Rfb);
+    const Rfb1 = Number(this.data.Rfb1);
+    const Rfb2 = Number(this.data.Rfb2);
 
-    const VoutResult = 0.605 * (60.4 + Rfb) / Rfb;
-    const RfbResult = 0.605 * 60.4 / (Vout - 0.605);
+
+    const VoutResult = 0.605 * (Rfb1 + Rfb2) / Rfb2;
+    const Ratio = ((Vout - 0.605) / 0.605).toFixed(2) + " : 1";
 
 
     this.setData({
       VoutResult: VoutResult.toFixed(2),
-      RfbResult: RfbResult.toFixed(2),
+      Ratio,
     })
   },
 

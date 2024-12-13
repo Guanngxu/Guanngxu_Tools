@@ -6,10 +6,7 @@
   "usingComponents": {
     "t-loading": "tdesign-miniprogram/loading/loading",
     "t-icon": "tdesign-miniprogram/icon/icon",
-    "t-toast": "tdesign-miniprogram/toast/toast",
-    "t-tabs": "tdesign-miniprogram/tabs/tabs",
     "goods-list": "/components/goods-list/index",
-    "t-tab-panel": "tdesign-miniprogram/tab-panel/tab-panel",
     "t-side-bar": "tdesign-miniprogram/side-bar/side-bar",
     "t-side-bar-item": "tdesign-miniprogram/side-bar-item/side-bar-item"
   }

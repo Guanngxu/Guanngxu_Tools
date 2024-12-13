@@ -1,8 +1,6 @@
 .goods-card {
   box-sizing: border-box;
   font-size: 24rpx;
-  border-radius: 0 0 16rpx 16rpx;
-  border-bottom: none;
 }
 
 .goods-card__main {
@@ -68,7 +66,12 @@
   overflow: hidden;
   word-break: break-word;
   line-height: 72rpx;
-  /* line-height: 36rpx; */
+}
+
+.goods-card__title span {
+  box-sizing: border-box;
+  padding-bottom: 5rpx;
+  border-bottom: 5rpx solid #0052d9;
 }
 
 .goods-card__tags {
