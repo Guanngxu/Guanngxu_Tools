@@ -22,7 +22,8 @@ const calcListMap = {
   ],
   "RSHJ2630ARH": [
     { "title": "输出电压", "tags": ["DC-DC"], "page": "/pages/2630/vout/vout" },
-    { "title": "缓启动时间", "tags": ["DC-DC"], "page": "/pages/2630/startup/startup" }
+    { "title": "缓启动时间", "tags": ["DC-DC"], "page": "/pages/2630/startup/startup" },
+    { "title": "开关频率设置", "tags": ["DC-DC"], "page": "/pages/2630/freq/freq" }
   ],
   "RSS2600IRH": [
     { "title": "输出电压", "tags": ["DC-DC"], "page": "/pages/2600/vout/vout" },
