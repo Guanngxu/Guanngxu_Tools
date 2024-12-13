@@ -20,7 +20,8 @@ const calcListMap = [
     "items": [
       { "title": "输出电压", "page": "/pages/2600/vout/vout" },
       { "title": "缓启动时间", "page": "/pages/2600/startup/startup" },
-      { "title": "开关频率设置", "page": "/pages/2600/freq/freq" }
+      { "title": "开关频率设置", "page": "/pages/2600/freq/freq" },
+      { "title": "欠压保护", "page": "/pages/2600/uvlo/uvlo" }
     ]
   },
   {
@@ -36,7 +37,8 @@ const calcListMap = [
     "items": [
       { "title": "输出电压", "page": "/pages/2630/vout/vout" },
       { "title": "缓启动时间", "page": "/pages/2630/startup/startup" },
-      { "title": "开关频率设置", "page": "/pages/2630/freq/freq" }
+      { "title": "开关频率设置", "page": "/pages/2630/freq/freq" },
+      { "title": "欠压保护", "page": "/pages/2630/uvlo/uvlo" }
     ]
   },
   {
@@ -53,7 +55,8 @@ const calcListMap = [
     "items": [
       { "title": "缓启动时间", "page": "/pages/1206/startup/startup" },
       { "title": "输出电压", "page": "/pages/1206/vout/vout" },
-      { "title": "开关频率设置", "page": "/pages/1206/freq/freq" }
+      { "title": "开关频率设置", "page": "/pages/1206/freq/freq" },
+      { "title": "欠压保护", "page": "/pages/1206/uvlo/uvlo" }
     ]
   },
   {
