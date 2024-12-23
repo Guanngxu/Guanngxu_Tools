@@ -78,7 +78,8 @@ const calcListMap = [
   {
     "title": "其它工具",
     "items": [
-      { "title": "频率周期换算", "page": "/pages/freq/f2s/f2s" },
+      { "title": "频率周期换算", "page": "/pages/tools/freq/freq" },
+      { "title": "PSRR衰减系数", "page": "/pages/tools/psrr/psrr" },
     ]
   },
 ]

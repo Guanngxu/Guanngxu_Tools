@@ -1,0 +1,10 @@
+<view class="input-data">
+  <t-input model:value="{{PSRR}}" placeholder="PSRR" type="digit" tips="PSRR，单位：dB" />
+</view>
+
+<view class="compute-button">
+  <t-button bind:tap="compute_click" size="large" theme="light" variant="outline" block>计算衰减系数</t-button>
+</view>
+<view class="compute-result">
+  <t-input disabled value="{{factor}}" placeholder="衰减系数" type="digit" tips="衰减系数" />
+</view>

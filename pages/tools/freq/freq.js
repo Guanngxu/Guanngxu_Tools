@@ -102,7 +102,7 @@ Page({
     })
     return {
       title: '频率周期换算',
-      path: '/pages/freq/f2s/f2s',
+      path: '/pages/tools/freq/freq',
       promise
     }
   }
