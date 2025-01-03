@@ -16,11 +16,16 @@ Page({
     const R2 = Number(this.data.R2);
     const VStart = Number(this.data.VStart);
     const VStop = Number(this.data.VStop);
+    const Ienh = 6;
+    const Ien = 6;
+    const Venr = 1.18;
+    const Venf = 1.15;
 
-    const R1Result = 1000000 * (VStart * (1.15 / 1.18) - VStop) / (6 * (1 - 1.15 / 1.18) + 6)
-    const R2Result = (R1Result * 1.15) / (VStop - 1.15 + R1Result * (6 + 6) / 1000000)
-    const VStopResult = R1 * 1.15 / R2 + 1.15 - R1 * (6 + 6) / 1000;
-    const VStartResult = (VStopResult + R1 * 1000 * (6 / 1000000 * (1 - 1.15 / 1.18) + 6 / 1000000)) * 1.18 / 1.15;
+
+    const R1Result = 1000000 * (VStart * (Venf / Venr) - VStop) / (Ien * (1 - Venf / Venr) + Ienh)
+    const R2Result = (R1Result * Venf) / (VStop - Venf + R1Result * (Ien + Ienh) / 1000000)
+    const VStopResult = R1 * Venf / R2 + Venf - R1 * (Ien + Ienh) / 1000;
+    const VStartResult = (VStopResult + R1 * 1000 * (Ien / 1000000 * (1 - Venf / Venr) + Ienh / 1000000)) * Venr / Venf;
 
     this.setData({
       VStartResult: VStartResult.toFixed(2),
