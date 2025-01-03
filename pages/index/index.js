@@ -68,6 +68,12 @@ const calcListMap = [
     ]
   },
   {
+    "title": "RSMH1212ARH",
+    "items": [
+      { "title": "欠压保护", "page": "/pages/1212/uvlo/uvlo" }
+    ]
+  },
+  {
     "title": "BUCK 电路计算",
     "items": [
       { "title": "输出纹波", "page": "/pages/buck/deltavout/deltavout" },
