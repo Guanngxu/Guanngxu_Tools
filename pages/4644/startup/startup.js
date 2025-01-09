@@ -19,12 +19,12 @@ Page({
 		const promise = new Promise(resolve => {
 			setTimeout(() => {
 				resolve({
-					title: '4644 缓启动时间'
+					title: 'RSHF4644ARH 缓启动时间'
 				})
 			}, 2000)
 		})
 		return {
-			title: '4644 缓启动时间',
+			title: 'RSHF4644ARH 缓启动时间',
 			path: '/pages/4644/startup/startup',
 			promise
 		}
