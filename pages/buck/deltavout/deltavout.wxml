@@ -11,8 +11,8 @@
   <t-button bind:tap="compute_click" size="large" theme="light" variant="outline" block>计算</t-button>
 </view>
 <view class="compute-result">
-  <t-input disabled value="{{Iripple}}" placeholder="电感纹波电流" type="digit" tips="电感纹波电流，单位：A" />
+  <t-input disabled value="{{Vout_ripple}}" placeholder="输出纹波" type="digit" tips="输出纹波，单位：mV" />
   <t-input disabled value="{{Vout_rippleESR}}" placeholder="ESR 引起的纹波" type="digit" tips="ESR 引起的纹波，单位：mV" />
   <t-input disabled value="{{Vout_rippleC}}" placeholder="电容引起的纹波" type="digit" tips="电容引起的纹波，单位：mV" />
-  <t-input disabled value="{{Vout_ripple}}" placeholder="输出纹波" type="digit" tips="输出纹波，单位：mV" />
+  <t-input disabled value="{{Iripple}}" placeholder="电感纹波电流" type="digit" tips="电感纹波电流，单位：A" />
 </view>
