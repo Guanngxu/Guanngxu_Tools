@@ -75,6 +75,13 @@ const calcListMap = [
     ]
   },
   {
+    "title": "RSS3802QRH/IRH",
+    "items": [
+      { "title": "过压保护", "page": "/pages/3802/ovp/ovp" },
+      { "title": "欠压保护", "page": "/pages/3802/uvlo/uvlo" }
+    ]
+  },
+  {
     "title": "BUCK 电路计算",
     "items": [
       { "title": "输出纹波", "page": "/pages/buck/deltavout/deltavout" },

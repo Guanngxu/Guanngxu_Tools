@@ -1,0 +1,26 @@
+<view class="input-data">
+  <t-input model:value="{{Vovp}}" placeholder="期望过压保护点" type="digit" tips="期望过压保护点，单位：V" />
+  <t-input model:value="{{Vre}}" placeholder="期望恢复电压" type="digit" tips="期望恢复电压，单位：V" />
+</view>
+
+<view class="compute-button">
+  <t-button bind:tap="compute_click" size="large" theme="light" variant="outline" block>计算分压电阻</t-button>
+</view>
+<view class="compute-result">
+  <t-input disabled value="{{R1Result}}" placeholder="上分压电阻" type="digit" tips="上分压电阻，单位：kohm" />
+  <t-input disabled value="{{R2Result}}" placeholder="下分压电阻" type="digit" tips="下分压电阻，单位：kohm" />
+</view>
+
+
+<view class="input-data">
+  <t-input model:value="{{R1}}" placeholder="上分压电阻" type="digit" tips="上分压电阻，单位：kohm" />
+  <t-input model:value="{{R2}}" placeholder="下分压电阻" type="digit" tips="下分压电阻，单位：kohm" />
+</view>
+
+<view class="compute-button">
+  <t-button bind:tap="compute_click" size="large" theme="light" variant="outline" block>计算开启/停机电压</t-button>
+</view>
+<view class="compute-result">
+  <t-input disabled value="{{VovpResult}}" placeholder="开启电压" type="digit" tips="开启电压，单位：V" />
+  <t-input disabled value="{{VreResult}}" placeholder="停机电压" type="digit" tips="停机电压，单位：V" />
+</view>
