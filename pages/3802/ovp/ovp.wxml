@@ -18,9 +18,9 @@
 </view>
 
 <view class="compute-button">
-  <t-button bind:tap="compute_click" size="large" theme="light" variant="outline" block>计算开启/停机电压</t-button>
+  <t-button bind:tap="compute_click" size="large" theme="light" variant="outline" block>计算过压/恢复电压</t-button>
 </view>
 <view class="compute-result">
-  <t-input disabled value="{{VovpResult}}" placeholder="开启电压" type="digit" tips="开启电压，单位：V" />
-  <t-input disabled value="{{VreResult}}" placeholder="停机电压" type="digit" tips="停机电压，单位：V" />
+  <t-input disabled value="{{VovpResult}}" placeholder="过压保护点电压" type="digit" tips="过压保护点电压，单位：V" />
+  <t-input disabled value="{{VreResult}}" placeholder="恢复电压" type="digit" tips="恢复机电压，单位：V" />
 </view>
