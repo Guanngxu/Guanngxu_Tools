@@ -13,7 +13,8 @@ const calcListMap = [
       { "title": "输出上升时间", "page": "/pages/0702/startup/startup" },
       { "title": "过流保护", "page": "/pages/0702/oc/oc" },
       { "title": "电流采样", "page": "/pages/0702/cs/cs" },
-      { "title": "过流保护时间", "page": "/pages/0702/octime/octime" }
+      { "title": "过流保护时间", "page": "/pages/0702/octime/octime" },
+      { "title": "输入欠压保护", "page": "/pages/0702/uvlo/uvlo" },
     ]
   },
   {
