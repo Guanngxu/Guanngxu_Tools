@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "RSS0508IRH/HRH 欠压保护",
+  "navigationBarTitleText": "RSS0508IRH/HRH 输入欠压保护",
   "onReachBottomDistance": 10,
   "backgroundTextStyle": "light",
   "enablePullDownRefresh": true,

@@ -39,12 +39,12 @@ Page({
     const promise = new Promise(resolve => {
       setTimeout(() => {
         resolve({
-          title: 'RSS3802QRH/IRH 欠压保护'
+          title: 'RSS3802QRH/IRH 输入欠压保护'
         })
       }, 2000)
     })
     return {
-      title: 'RSS3802QRH/IRH 欠压保护',
+      title: 'RSS3802QRH/IRH 输入欠压保护',
       path: '/pages/3802/uvlo/uvlo',
       promise
     }

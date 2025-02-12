@@ -28,12 +28,12 @@ Page({
     const promise = new Promise(resolve => {
       setTimeout(() => {
         resolve({
-          title: 'RSHF4644ARH 欠压保护'
+          title: 'RSHF4644ARH 输入欠压保护'
         })
       }, 2000)
     })
     return {
-      title: 'RSHF4644ARH 欠压保护',
+      title: 'RSHF4644ARH 输入欠压保护',
       path: '/pages/4644/uvlo/uvlo',
       promise
     }

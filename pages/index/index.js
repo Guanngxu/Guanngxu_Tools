@@ -4,7 +4,7 @@ const calcListMap = [
     "items": [
       { "title": "输出电压", "page": "/pages/4644/vout/vout" },
       { "title": "缓启动时间", "page": "/pages/4644/startup/startup" },
-      { "title": "欠压保护", "page": "/pages/4644/uvlo/uvlo" }
+      { "title": "输入欠压保护", "page": "/pages/4644/uvlo/uvlo" }
     ]
   },
   {
@@ -15,7 +15,7 @@ const calcListMap = [
       { "title": "电流采样", "page": "/pages/0702/cs/cs" },
       { "title": "过流保护时间", "page": "/pages/0702/octime/octime" },
       { "title": "输入欠压保护", "page": "/pages/0702/uvlo/uvlo" },
-      { "title": "过压保护", "page": "/pages/0702/ovp/ovp" },
+      { "title": "输出过压保护", "page": "/pages/0702/ovp/ovp" },
     ]
   },
   {
@@ -24,7 +24,7 @@ const calcListMap = [
       { "title": "输出电压", "page": "/pages/2600/vout/vout" },
       { "title": "缓启动时间", "page": "/pages/2600/startup/startup" },
       { "title": "开关频率设置", "page": "/pages/2600/freq/freq" },
-      { "title": "欠压保护", "page": "/pages/2600/uvlo/uvlo" }
+      { "title": "输入欠压保护", "page": "/pages/2600/uvlo/uvlo" }
     ]
   },
   {
@@ -41,13 +41,13 @@ const calcListMap = [
       { "title": "输出电压", "page": "/pages/2630/vout/vout" },
       { "title": "缓启动时间", "page": "/pages/2630/startup/startup" },
       { "title": "开关频率设置", "page": "/pages/2630/freq/freq" },
-      { "title": "欠压保护", "page": "/pages/2630/uvlo/uvlo" }
+      { "title": "输入欠压保护", "page": "/pages/2630/uvlo/uvlo" }
     ]
   },
   {
     "title": "RSS0508IRH/HRH",
     "items": [
-      { "title": "欠压保护", "page": "/pages/0508/uvlo/uvlo" },
+      { "title": "输入欠压保护", "page": "/pages/0508/uvlo/uvlo" },
       { "title": "缓启动时间", "page": "/pages/0508/startup/startup" },
       { "title": "输出电压", "page": "/pages/0508/vout/vout" },
       { "title": "开关频率设置", "page": "/pages/0508/freq/freq" }
@@ -59,7 +59,7 @@ const calcListMap = [
       { "title": "缓启动时间", "page": "/pages/1206/startup/startup" },
       { "title": "输出电压", "page": "/pages/1206/vout/vout" },
       { "title": "开关频率设置", "page": "/pages/1206/freq/freq" },
-      { "title": "欠压保护", "page": "/pages/1206/uvlo/uvlo" }
+      { "title": "输入欠压保护", "page": "/pages/1206/uvlo/uvlo" }
     ]
   },
   {
@@ -73,14 +73,14 @@ const calcListMap = [
   {
     "title": "RSMH1212ARH",
     "items": [
-      { "title": "欠压保护", "page": "/pages/1212/uvlo/uvlo" }
+      { "title": "输入欠压保护", "page": "/pages/1212/uvlo/uvlo" }
     ]
   },
   {
     "title": "RSS3802QRH/IRH",
     "items": [
-      { "title": "过压保护", "page": "/pages/3802/ovp/ovp" },
-      { "title": "欠压保护", "page": "/pages/3802/uvlo/uvlo" }
+      { "title": "输出过压保护", "page": "/pages/3802/ovp/ovp" },
+      { "title": "输入欠压保护", "page": "/pages/3802/uvlo/uvlo" }
     ]
   },
   {

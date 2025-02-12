@@ -27,12 +27,12 @@ Page({
     const promise = new Promise(resolve => {
       setTimeout(() => {
         resolve({
-          title: 'RSSW0702IRH 过压保护'
+          title: 'RSSW0702IRH 输出过压保护'
         })
       }, 2000)
     })
     return {
-      title: 'RSSW0702IRH 过压保护',
+      title: 'RSSW0702IRH 输出过压保护',
       path: '/pages/0702/ovp/ovp',
       promise
     }
