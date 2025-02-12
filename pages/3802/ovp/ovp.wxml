@@ -22,5 +22,5 @@
 </view>
 <view class="compute-result">
   <t-input disabled value="{{VovpResult}}" placeholder="过压保护点电压" type="digit" tips="过压保护点电压，单位：V" />
-  <t-input disabled value="{{VreResult}}" placeholder="恢复电压" type="digit" tips="恢复机电压，单位：V" />
+  <t-input disabled value="{{VreResult}}" placeholder="恢复电压" type="digit" tips="恢复电压，单位：V" />
 </view>

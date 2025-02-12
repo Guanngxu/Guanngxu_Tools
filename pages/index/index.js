@@ -16,6 +16,7 @@ const calcListMap = [
       { "title": "过流保护时间", "page": "/pages/0702/octime/octime" },
       { "title": "输入欠压保护", "page": "/pages/0702/uvlo/uvlo" },
       { "title": "输出过压保护", "page": "/pages/0702/ovp/ovp" },
+      { "title": "PG过压保护", "page": "/pages/0702/pgovp/pgovp" },
     ]
   },
   {
