@@ -1,0 +1,12 @@
+<view class="input-data">
+  <t-input model:value="{{R1}}" placeholder="上分压电阻" type="digit" tips="上分压电阻，单位：kohm" />
+  <t-input model:value="{{R2}}" placeholder="下分压电阻" type="digit" tips="下分压电阻，单位：kohm" />
+</view>
+
+<view class="compute-button">
+  <t-button bind:tap="compute_click" size="large" theme="light" variant="outline" block>计算过压/恢复电压</t-button>
+</view>
+<view class="compute-result">
+  <t-input disabled value="{{VovpResult}}" placeholder="过压保护点电压" type="digit" tips="过压保护点电压，单位：V" />
+  <t-input disabled value="{{VreResult}}" placeholder="恢复电压" type="digit" tips="恢复机电压，单位：V" />
+</view>
