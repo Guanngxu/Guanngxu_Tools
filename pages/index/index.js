@@ -68,7 +68,14 @@ const calcListMap = [
     "items": [
       { "title": "输出电压", "page": "/pages/1101/vout/vout" },
       { "title": "缓启动时间", "page": "/pages/1101/startup/startup" },
-      { "title": "过流保护", "page": "/pages/1101/oc/oc" }
+      { "title": "过流保护", "page": "/pages/1101/oc/oc" },
+      { "title": "电流采样", "page": "/pages/1101/cs/cs" }
+    ]
+  },
+  {
+    "title": "RSW1201HRH",
+    "items": [
+      { "title": "输出电压", "page": "/pages/1201/vout/vout" },
     ]
   },
   {

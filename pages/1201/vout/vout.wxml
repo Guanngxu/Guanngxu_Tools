@@ -1,0 +1,22 @@
+<!-- 根据电阻算电压 -->
+<view class="input-data">
+  <t-input model:value="{{Rfb1}}" placeholder="上分压电阻" type="digit" tips="上分压电阻，单位：kohm" />
+  <t-input model:value="{{Rfb2}}" placeholder="下分压电阻" type="digit" tips="下分压电阻，单位：kohm" />
+</view>
+<view class="compute-button">
+  <t-button bind:tap="compute_click" size="large" theme="light" variant="outline" block>计算输出电压</t-button>
+</view>
+<view class="compute-result">
+  <t-input disabled value="{{VoutResult}}" placeholder="输出电压" type="digit" tips="输出电压，单位：V" />
+</view>
+
+<!-- 根据电压算电阻比例 -->
+<view class="input-data">
+  <t-input model:value="{{Vout}}" placeholder="期望输出电压" type="digit" tips="期望输出电压，单位：V" />
+</view>
+<view class="compute-button">
+  <t-button bind:tap="compute_click" size="large" theme="light" variant="outline" block>计算分压电阻比例</t-button>
+</view>
+<view class="compute-result">
+  <t-input disabled value="{{Ratio}}" placeholder="上分压比下分压电阻比例" tips="上分压比下分压电阻比例" />
+</view>

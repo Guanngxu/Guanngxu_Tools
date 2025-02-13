@@ -1,0 +1,13 @@
+<!-- 根据过流保护点计算电阻 -->
+<view class="input-data">
+  <t-input model:value="{{VBIAS}}" placeholder="VBIAS 电压" type="digit" tips="VBIAS 电压，单位：V" />
+  <t-input model:value="{{Rcs}}" placeholder="CS 对 VBIAS 电阻" type="digit" tips="CS 对 VBIAS 电阻，单位：kohm" />
+  <t-input model:value="{{Vcs}}" placeholder="CS 端电压" type="digit" tips="CS 端电压，单位：V" />
+</view>
+
+<view class="compute-button">
+  <t-button bind:tap="compute_click" size="large" theme="light" variant="outline" block>计算负载电流</t-button>
+</view>
+<view class="compute-result">
+  <t-input disabled value="{{IloadResult}}" placeholder="负载电流" type="digit" tips="负载电流，单位：A" />
+</view>
