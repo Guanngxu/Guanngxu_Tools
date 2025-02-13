@@ -22,6 +22,8 @@
     "pages/1101/cs/cs",
     "pages/1201/vout/vout",
     "pages/1201/adj/adj",
+    "pages/1201A/vout/vout",
+    "pages/1201A/adj/adj",
     "pages/0508/freq/freq",
     "pages/0508/uvlo/uvlo",
     "pages/0508/vout/vout",

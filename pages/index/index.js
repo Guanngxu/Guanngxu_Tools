@@ -80,6 +80,13 @@ const calcListMap = [
     ]
   },
   {
+    "title": "RSW1201AORH/IRH",
+    "items": [
+      { "title": "输出电压", "page": "/pages/1201A/vout/vout" },
+      { "title": "时间常数", "page": "/pages/1201A/adj/adj" },
+    ]
+  },
+  {
     "title": "RSMH1212ARH",
     "items": [
       { "title": "输入欠压保护", "page": "/pages/1212/uvlo/uvlo" }
