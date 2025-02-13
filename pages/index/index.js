@@ -34,6 +34,9 @@ const calcListMap = [
       { "title": "输出上升时间", "page": "/pages/0706/startup/startup" },
       { "title": "过流保护", "page": "/pages/0706/oc/oc" },
       { "title": "电流采样", "page": "/pages/0706/cs/cs" },
+      { "title": "输入欠压保护", "page": "/pages/0706/uvlo/uvlo" },
+      { "title": "输出过压保护", "page": "/pages/0706/ovp/ovp" },
+      { "title": "PG阈值设定", "page": "/pages/0706/pgth/pgth" },
     ]
   },
   {
