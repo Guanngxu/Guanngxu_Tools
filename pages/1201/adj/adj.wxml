@@ -1,0 +1,12 @@
+<!-- 根据电阻算电压 -->
+<view class="input-data">
+  <t-input model:value="{{Rfb1}}" placeholder="Vout 上分压电阻" type="digit" tips="Vout 上分压电阻，单位：kohm" />
+  <t-input model:value="{{Rfb2}}" placeholder="Vout 下分压电阻" type="digit" tips="Vout 下分压电阻，单位：kohm" />
+  <t-input model:value="{{time}}" placeholder="期望设置时间常数" type="digit" tips="期望设置时间常数，范围：40~200us，单位：us" />
+</view>
+<view class="compute-button">
+  <t-button bind:tap="compute_click" size="large" theme="light" variant="outline" block>计算时间常数</t-button>
+</view>
+<view class="compute-result">
+  <t-input disabled value="{{CadjResult}}" placeholder="ADJ 引脚电容" type="digit" tips="ADJ 引脚电容，单位：nF" />
+</view>

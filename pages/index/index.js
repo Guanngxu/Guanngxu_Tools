@@ -73,9 +73,10 @@ const calcListMap = [
     ]
   },
   {
-    "title": "RSW1201HRH",
+    "title": "RSW1201HRH/URH",
     "items": [
       { "title": "输出电压", "page": "/pages/1201/vout/vout" },
+      { "title": "时间常数", "page": "/pages/1201/adj/adj" },
     ]
   },
   {
