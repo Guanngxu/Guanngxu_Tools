@@ -1,5 +1,6 @@
 <view class="input-data">
   <t-input model:value="{{Css}}" placeholder="缓启动电容" type="digit" tips="缓启动电容，单位：nF" />
+  <t-input model:value="{{ChannelVout}}" placeholder="并联通道数" type="digit" tips="并联通道数，单位：个" />
 </view>
 
 <view class="compute-button">

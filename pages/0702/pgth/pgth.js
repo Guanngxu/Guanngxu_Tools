@@ -3,8 +3,8 @@ Page({
     R1: 100,
     R2: 25,
 
-    VovpResult: 6.51,
-    VreResult: 6.06,
+    VovpResult: 3.02,
+    VreResult: 2.81,
   },
 
   compute_click() {
@@ -27,13 +27,13 @@ Page({
     const promise = new Promise(resolve => {
       setTimeout(() => {
         resolve({
-          title: 'RSSW0702IRH PG过压保护'
+          title: 'RSSW0702IRH PG阈值设定'
         })
       }, 2000)
     })
     return {
-      title: 'RSSW0702IRH PG过压保护',
-      path: '/pages/0702/pgovp/pgovp',
+      title: 'RSSW0702IRH PG阈值设定',
+      path: '/pages/0702/pgth/pgth',
       promise
     }
   }

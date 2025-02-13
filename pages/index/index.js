@@ -8,6 +8,15 @@ const calcListMap = [
     ]
   },
   {
+    "title": "RSHJ2630ARH",
+    "items": [
+      { "title": "输出电压", "page": "/pages/2630/vout/vout" },
+      { "title": "缓启动时间", "page": "/pages/2630/startup/startup" },
+      { "title": "开关频率设置", "page": "/pages/2630/freq/freq" },
+      { "title": "输入欠压保护", "page": "/pages/2630/uvlo/uvlo" },
+    ]
+  },
+  {
     "title": "RSSW0702IRH",
     "items": [
       { "title": "输出上升时间", "page": "/pages/0702/startup/startup" },
@@ -16,7 +25,15 @@ const calcListMap = [
       { "title": "过流保护时间", "page": "/pages/0702/octime/octime" },
       { "title": "输入欠压保护", "page": "/pages/0702/uvlo/uvlo" },
       { "title": "输出过压保护", "page": "/pages/0702/ovp/ovp" },
-      { "title": "PG过压保护", "page": "/pages/0702/pgovp/pgovp" },
+      { "title": "PG阈值设定", "page": "/pages/0702/pgth/pgth" },
+    ]
+  },
+  {
+    "title": "RSSW0706IRH/HRH",
+    "items": [
+      { "title": "输出上升时间", "page": "/pages/0706/startup/startup" },
+      { "title": "过流保护", "page": "/pages/0706/oc/oc" },
+      { "title": "电流采样", "page": "/pages/0706/cs/cs" },
     ]
   },
   {
@@ -25,50 +42,33 @@ const calcListMap = [
       { "title": "输出电压", "page": "/pages/2600/vout/vout" },
       { "title": "缓启动时间", "page": "/pages/2600/startup/startup" },
       { "title": "开关频率设置", "page": "/pages/2600/freq/freq" },
-      { "title": "输入欠压保护", "page": "/pages/2600/uvlo/uvlo" }
-    ]
-  },
-  {
-    "title": "RSW1101IRH/HRH",
-    "items": [
-      { "title": "缓启动时间", "page": "/pages/1101/startup/startup" },
-      { "title": "输出电压", "page": "/pages/1101/vout/vout" },
-      { "title": "过流保护", "page": "/pages/1101/oc/oc" }
-    ]
-  },
-  {
-    "title": "RSHJ2630ARH",
-    "items": [
-      { "title": "输出电压", "page": "/pages/2630/vout/vout" },
-      { "title": "缓启动时间", "page": "/pages/2630/startup/startup" },
-      { "title": "开关频率设置", "page": "/pages/2630/freq/freq" },
-      { "title": "输入欠压保护", "page": "/pages/2630/uvlo/uvlo" }
+      { "title": "输入欠压保护", "page": "/pages/2600/uvlo/uvlo" },
     ]
   },
   {
     "title": "RSS0508IRH/HRH",
     "items": [
-      { "title": "输入欠压保护", "page": "/pages/0508/uvlo/uvlo" },
-      { "title": "缓启动时间", "page": "/pages/0508/startup/startup" },
       { "title": "输出电压", "page": "/pages/0508/vout/vout" },
-      { "title": "开关频率设置", "page": "/pages/0508/freq/freq" }
+      { "title": "缓启动时间", "page": "/pages/0508/startup/startup" },
+      { "title": "开关频率设置", "page": "/pages/0508/freq/freq" },
+      { "title": "输入欠压保护", "page": "/pages/0508/uvlo/uvlo" },
     ]
   },
   {
     "title": "RSS1206HRH/IRH",
     "items": [
-      { "title": "缓启动时间", "page": "/pages/1206/startup/startup" },
       { "title": "输出电压", "page": "/pages/1206/vout/vout" },
+      { "title": "缓启动时间", "page": "/pages/1206/startup/startup" },
       { "title": "开关频率设置", "page": "/pages/1206/freq/freq" },
       { "title": "输入欠压保护", "page": "/pages/1206/uvlo/uvlo" }
     ]
   },
   {
-    "title": "RSSW0706IRH/HRH",
+    "title": "RSW1101IRH/HRH",
     "items": [
-      { "title": "过流保护", "page": "/pages/0706/oc/oc" },
-      { "title": "电流采样", "page": "/pages/0706/cs/cs" },
-      { "title": "输出上升时间", "page": "/pages/0706/startup/startup" },
+      { "title": "输出电压", "page": "/pages/1101/vout/vout" },
+      { "title": "缓启动时间", "page": "/pages/1101/startup/startup" },
+      { "title": "过流保护", "page": "/pages/1101/oc/oc" }
     ]
   },
   {
@@ -80,8 +80,8 @@ const calcListMap = [
   {
     "title": "RSS3802QRH/IRH",
     "items": [
+      { "title": "输入欠压保护", "page": "/pages/3802/uvlo/uvlo" },
       { "title": "输出过压保护", "page": "/pages/3802/ovp/ovp" },
-      { "title": "输入欠压保护", "page": "/pages/3802/uvlo/uvlo" }
     ]
   },
   {
