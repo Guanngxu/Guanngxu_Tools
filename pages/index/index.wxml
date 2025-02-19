@@ -3,6 +3,6 @@
     <t-side-bar-item wx:for="{{calcListMap}}" wx:key="index" value="{{item.value || index}}" label="{{item.title}}" />
   </t-side-bar>
   <scroll-view class="content" scroll-y scroll-with-animation>
-      <goods-list wr-class="goods-list-container" goodsList="{{goodsList}}" bind:click="goodListClickHandle" bind:addcart="goodListAddCartHandle" />
+      <goods-list wr-class="goods-list-container" goodsList="{{goodsList}}" bind:click="goodListClickHandle" />
   </scroll-view>
 </view>
