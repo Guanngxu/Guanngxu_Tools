@@ -100,6 +100,7 @@ const calcListMap = [
     "items": [
       { "title": "输入欠压保护", "page": "/pages/3802/uvlo/uvlo" },
       { "title": "输出过压保护", "page": "/pages/3802/ovp/ovp" },
+      { "title": "SR_TH门限电压", "page": "/pages/3802/srth/srth" },
     ]
   },
   {

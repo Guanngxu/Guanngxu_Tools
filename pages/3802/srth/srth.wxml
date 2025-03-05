@@ -1,0 +1,26 @@
+<view class="input-data">
+  <t-input model:value="{{Vsren}}" placeholder="期望 Vsr_en 电压" type="digit" tips="期望 Vsr_en 电压，单位：mV" />
+  <t-input model:value="{{Vsrdis}}" placeholder="期望 Vsr_dis 电压" type="digit" tips="期望 Vsr_dis 电压，单位：mV" />
+</view>
+
+<view class="compute-button">
+  <t-button bind:tap="compute_click" size="large" theme="light" variant="outline" block>计算分压电阻</t-button>
+</view>
+<view class="compute-result">
+  <t-input disabled value="{{R1Result}}" placeholder="上分压电阻" type="digit" tips="上分压电阻，单位：kohm" />
+  <t-input disabled value="{{R2Result}}" placeholder="下分压电阻" type="digit" tips="下分压电阻，单位：kohm" />
+</view>
+
+
+<view class="input-data">
+  <t-input model:value="{{R1}}" placeholder="上分压电阻" type="digit" tips="上分压电阻，单位：kohm" />
+  <t-input model:value="{{R2}}" placeholder="下分压电阻" type="digit" tips="下分压电阻，单位：kohm" />
+</view>
+
+<view class="compute-button">
+  <t-button bind:tap="compute_click" size="large" theme="light" variant="outline" block>计算SR_TH门限电压</t-button>
+</view>
+<view class="compute-result">
+  <t-input disabled value="{{VsrenResult}}" placeholder="Vsr_en 电压" type="digit" tips="Vsr_en 电压，单位：mV" />
+  <t-input disabled value="{{VsrdisResult}}" placeholder="Vsr_dis 电压" type="digit" tips="Vsr_dis 电压，单位：mV" />
+</view>
