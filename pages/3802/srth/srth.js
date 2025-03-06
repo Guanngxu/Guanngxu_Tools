@@ -1,14 +1,14 @@
 Page({
   data: {
-    R1: 208.33,
-    R2: 3.39,
-    Vsren: 100,
-    Vsrdis: 90,
+    R1: 208.05,
+    R2: 3.38,
+    Vsren: 99.91,
+    Vsrdis: 89.93,
 
-    VsrenResult: 100,
-    VsrdisResult: 90,
-    R1Result: 208.33,
-    R2Result: 3.39,
+    VsrenResult: 99.91,
+    VsrdisResult: 89.93,
+    R1Result: 208.05,
+    R2Result: 3.38,
   },
 
   compute_click() {
@@ -18,11 +18,9 @@ Page({
     const Vsrdis = Number(this.data.Vsrdis);
     const Vref = 5; // 5V
 
+    const R1Result = (Vsren - Vsrdis) * Vref / (3 / 1000000 * (2 * Vsrdis - Vsren));
+    const R2Result = (Vsren / 1000 * R1Result) / (Vref - Vsren / 1000 + ((2 * Vref * (Vsren - Vsrdis)) / (2 * Vsrdis - Vsren)));
 
-    const R1Result = (Vref * (Vsren - Vsrdis) / 1000) / (3 / 1000000 * (2 * Vsrdis - Vsren) / 1000)
-    const R2Result = (Vref * (Vsren - Vsrdis) / 1000) / (3 / 1000000 * (Vref - 2 * Vsrdis / 1000 + Vsren / 1000))
-    // const temp2Vsrdis_Vsren = Vref * (R2 / (R1 + R2))
-    // const tempVsren_Vsrdis = (R1 * R2) / (R1 + R2)
     const VsrenResult = 1000 * (Vref * (R2 / (R1 + R2)) + 6 * (R1 * R2 * 1000) / (R1 + R2) / 1000000)
     const VsrdisResult = 1000 * (Vref * (R2 / (R1 + R2)) + 3 * (R1 * R2 * 1000) / (R1 + R2) / 1000000)
 
