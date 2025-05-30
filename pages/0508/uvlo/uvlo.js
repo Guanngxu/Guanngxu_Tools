@@ -21,17 +21,25 @@ Page({
     const Venr = 1.10;
     const Venf = 0.99;
 
+    // const uvlo = VStart - VStop;
+    // if(uvlo > 0.4 || uvlo < 0.2) {
+    //   wx.showModal({
+    //     title: '提示',
+    //     content: '启机电压与关机电压迟滞区间建议设置在 200mV 至 400mV 之间',
+    //   })
+    //   return ;
+    // }
 
-    const R1Result = 1000000 * (VStart * (Venf / Venr) - VStop) / (Ien * (1 - Venf / Venr) + Ienh)
-    const R2Result = (R1Result * Venf) / (VStop - Venf + R1Result * (Ien + Ienh) / 1000000)
+    // const R1Result = 1000000 * (VStart * (Venf / Venr) - VStop) / (Ien * (1 - Venf / Venr) + Ienh)
+    // const R2Result = (R1Result * Venf) / (VStop - Venf + R1Result * (Ien + Ienh) / 1000000)
     const VStopResult = R1 * Venf / R2 + Venf - R1 * (Ien + Ienh) / 1000;
     const VStartResult = (VStopResult + R1 * 1000 * (Ien / 1000000 * (1 - Venf / Venr) + Ienh / 1000000)) * Venr / Venf;
 
     this.setData({
       VStartResult: VStartResult.toFixed(2),
       VStopResult: VStopResult.toFixed(2),
-      R1Result: (R1Result / 1000).toFixed(2),
-      R2Result: (R2Result / 1000).toFixed(2),
+      // R1Result: (R1Result / 1000).toFixed(2),
+      // R2Result: (R2Result / 1000).toFixed(2),
     })
   },
 

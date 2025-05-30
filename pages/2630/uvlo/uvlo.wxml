@@ -1,4 +1,4 @@
-<view class="input-data">
+<!-- <view class="input-data">
   <t-input model:value="{{VStart}}" placeholder="期望启机电压" type="digit" tips="期望启机电压，单位：V" />
   <t-input model:value="{{VStop}}" placeholder="期望关机电压" type="digit" tips="期望关机电压，单位：V" />
 </view>
@@ -9,7 +9,7 @@
 <view class="compute-result">
   <t-input disabled value="{{R1Result}}" placeholder="上分压电阻" type="digit" tips="上分压电阻，单位：kohm" />
   <t-input disabled value="{{R2Result}}" placeholder="下分压电阻" type="digit" tips="下分压电阻，单位：kohm" />
-</view>
+</view> -->
 
 
 <view class="input-data">
