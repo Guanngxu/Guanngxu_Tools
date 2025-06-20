@@ -76,6 +76,15 @@ const calcListMap = [
     ]
   },
   {
+    "title": "RSHJ2012ARH",
+    "items": [
+      { "title": "输出电压", "page": "/pages/2012/vout/vout" },
+      { "title": "缓启动时间", "page": "/pages/2012/startup/startup" },
+      { "title": "开关频率设置", "page": "/pages/2012/freq/freq" },
+      { "title": "输入欠压保护", "page": "/pages/2012/uvlo/uvlo" }
+    ]
+  },
+  {
     "title": "RSW1101IRH/HRH",
     "items": [
       { "title": "输出电压", "page": "/pages/1101/vout/vout" },
