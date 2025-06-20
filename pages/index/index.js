@@ -58,6 +58,15 @@ const calcListMap = [
     ]
   },
   {
+    "title": "RSHF2000ARH",
+    "items": [
+      { "title": "输出电压", "page": "/pages/2000/vout/vout" },
+      { "title": "缓启动时间", "page": "/pages/2000/startup/startup" },
+      { "title": "开关频率设置", "page": "/pages/2000/freq/freq" },
+      { "title": "输入欠压保护", "page": "/pages/2000/uvlo/uvlo" },
+    ]
+  },
+  {
     "title": "RSS1206HRH/IRH",
     "items": [
       { "title": "输出电压", "page": "/pages/1206/vout/vout" },
