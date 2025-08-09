@@ -58,6 +58,8 @@
     "pages/3802/uvlo/uvlo",
     "pages/3802/srth/srth",
     "pages/3802/vout/vout",
+    "pages/3802/freq/freq",
+    "pages/3802/startup/startup",
     "pages/tools/freq/freq",
     "pages/tools/psrr/psrr"
   ],

@@ -120,6 +120,8 @@ const calcListMap = [
       { "title": "输出过压保护", "page": "/pages/3802/ovp/ovp" },
       { "title": "SR_TH门限电压", "page": "/pages/3802/srth/srth" },
       { "title": "输出电压", "page": "/pages/3802/vout/vout" },
+      { "title": "震荡频率设置", "page": "/pages/3802/freq/freq" },
+      { "title": "闭环缓启动时间", "page": "/pages/3802/startup/startup" },
     ]
   },
   {
