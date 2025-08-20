@@ -1,14 +1,14 @@
 Page({
   data: {
-    R1: 555.10,
-    R2: 26.04,
-    VStart: 23,
-    VStop: 19,
+    R1: 523.7,
+    R2: 24.93,
+    VStart: 23.99,
+    VStop: 18.71,
 
-    VStartResult: 23,
-    VStopResult: 19,
-    R1Result: 555.10,
-    R2Result: 26.04,
+    VStartResult: 23.99,
+    VStopResult: 18.71,
+    R1Result: 523.7,
+    R2Result: 24.93,
   },
 
   compute_click() {
@@ -16,9 +16,9 @@ Page({
     const R2 = Number(this.data.R2);
     const VStart = Number(this.data.VStart);
     const VStop = Number(this.data.VStop);
-    const Ienh = 6;
-    const Ien = 6;
-    const Venr = 1.18;
+    const Ienh = 6.3;
+    const Ien = 6.3;
+    const Venr = 1.24;
     const Venf = 1.15;
 
 
