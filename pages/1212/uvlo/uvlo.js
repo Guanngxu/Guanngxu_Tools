@@ -1,14 +1,14 @@
 Page({
   data: {
-    R1: 523.7,
-    R2: 24.93,
-    VStart: 23.99,
-    VStop: 18.71,
+    R1: 524.88,
+    R2: 24.98,
+    VStart: 23.28,
+    VStop: 19.35,
 
-    VStartResult: 23.99,
-    VStopResult: 18.71,
-    R1Result: 523.7,
-    R2Result: 24.93,
+    VStartResult: 23.28,
+    VStopResult: 19.35,
+    R1Result: 524.88,
+    R2Result: 24.98,
   },
 
   compute_click() {
@@ -16,10 +16,10 @@ Page({
     const R2 = Number(this.data.R2);
     const VStart = Number(this.data.VStart);
     const VStop = Number(this.data.VStop);
-    const Ienh = 6.3;
-    const Ien = 6.3;
-    const Venr = 1.24;
-    const Venf = 1.15;
+    const Ienh = 6.313;
+    const Ien = 6.315;
+    const Venr = 1.208;
+    const Venf = 1.18;
 
 
     const R1Result = 1000000 * (VStart * (Venf / Venr) - VStop) / (Ien * (1 - Venf / Venr) + Ienh)
