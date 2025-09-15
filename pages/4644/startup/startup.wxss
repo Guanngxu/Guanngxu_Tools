@@ -3,7 +3,7 @@ page {
   padding-bottom: calc(env(safe-area-inset-bottom) + 96rpx);
 }
 
-.input-data {
+.input-data, .notice {
   margin: 32rpx;
 }
 

@@ -10,7 +10,8 @@ Page({
     const Css = Number(this.data.Css);
     const ChannelVout = Number(this.data.ChannelVout);
 
-		const tss = Css * 0.597 / 2.5 / ChannelVout;
+    let tmp_tss = Css * 0.597 / 2.5 / ChannelVout;
+    const tss = tmp_tss > 1.2 ? tmp_tss : 1.2;
 
 		this.setData({
 			tss: tss.toFixed(2),

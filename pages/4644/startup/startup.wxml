@@ -1,3 +1,7 @@
+<view class="notice">
+  <t-notice-bar content="RSHF4644ARH 内部默认软起动时间为 1.2ms，当外置软起时间大于 1.2ms 时，器件自动切换到外置软起电路" visible="{{true}}" prefixIcon="sound">
+</t-notice-bar>
+</view>
 <view class="input-data">
   <t-input model:value="{{Css}}" placeholder="缓启动电容" type="digit" tips="缓启动电容，单位：nF" />
   <t-input model:value="{{ChannelVout}}" placeholder="并联通道数" type="digit" tips="并联通道数，单位：个" />
