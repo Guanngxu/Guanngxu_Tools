@@ -4,7 +4,7 @@ Page({
     VStop: 4,
 
     R1Result: 10.00,
-    R2Result: 3.47,
+    R2Result: 3.35,
   },
 
   compute_click() {
@@ -13,10 +13,13 @@ Page({
 
 
     const R1Result = 10;
+    const Vrunrise = 1.13;
+    const Vrundown = 1.03;
     // Vrundown 的典型值为 1.03
     // Vrunrise 的典型值为 1.13
-    // const R2Result = 1.13 * 10 / (VStart - 1.13);
-    const R2Result = 1.03 * 10 / (VStop - 1.03);
+    // const R2Result = (Vrundown * R1Result) / (VStop - Vrundown);
+    const R2Result = Vrunrise * 10 / (VStart - Vrunrise);
+    // console.info((R1Result + R2Result) / R2Result * Vrundown);
 
     this.setData({
       R1Result: R1Result.toFixed(2),
