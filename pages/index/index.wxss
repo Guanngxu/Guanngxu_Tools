@@ -27,6 +27,10 @@ page {
   width: 50% !important;
 }
 
+.t-side-bar-item {
+  font-size: 28rpx !important;
+}
+
 .content {
   margin-top: 5%;
 }
