@@ -29,12 +29,12 @@ Page({
     const promise = new Promise(resolve => {
       setTimeout(() => {
         resolve({
-          title: 'RSHF4644ARH 输出电压'
+          title: 'RSHF4644ARH/SRH-P 输出电压'
         })
       }, 2000)
     })
     return {
-      title: 'RSHF4644ARH 输出电压',
+      title: 'RSHF4644ARH/SRH-P 输出电压',
       path: '/pages/4644/vout/vout',
       promise
     }

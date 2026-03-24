@@ -1,6 +1,6 @@
 const calcListMap = [
   {
-    "title": "RSHF4644ARH",
+    "title": "RSHF4644ARH/SRH-P",
     "items": [
       { "title": "输出电压", "page": "/pages/4644/vout/vout" },
       { "title": "缓启动时间", "page": "/pages/4644/startup/startup" },
