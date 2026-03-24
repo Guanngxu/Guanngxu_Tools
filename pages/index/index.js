@@ -8,6 +8,28 @@ const calcListMap = [
     ]
   },
   {
+    "title": "RSHO4630SRH",
+    "items": [
+      { "title": "输出电压", "page": "/pages/4630/vout/vout" },
+      { "title": "缓启动时间", "page": "/pages/4630/startup/startup" }
+    ]
+  },
+  {
+    "title": "RSHP4650SRH",
+    "items": [
+      { "title": "输出电压", "page": "/pages/4650/vout/vout" },
+      { "title": "缓启动时间", "page": "/pages/4650/startup/startup" }
+    ]
+  },
+  {
+    "title": "RSHF4642SRH-P",
+    "items": [
+      { "title": "输出电压", "page": "/pages/4642/vout/vout" },
+      { "title": "缓启动时间", "page": "/pages/4642/startup/startup" },
+      { "title": "输入欠压保护", "page": "/pages/4642/uvlo/uvlo" }
+    ]
+  },
+  {
     "title": "RSHJ2630ARH",
     "items": [
       { "title": "输出电压", "page": "/pages/2630/vout/vout" },
