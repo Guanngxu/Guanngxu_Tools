@@ -1,0 +1,11 @@
+<view class="input-data">
+  <t-input model:value="{{Cout}}" placeholder="输出负载电容" type="digit" tips="输出负载电容，单位：mF" />
+  <t-input model:value="{{Iinrush}}" placeholder="期望浪涌电流" type="digit" tips="期望浪涌电流，单位：A" />
+</view>
+
+<view class="compute-button">
+  <t-button bind:tap="compute_click" size="large" theme="light" variant="outline" block>计算 SR 电容</t-button>
+</view>
+<view class="compute-result">
+  <t-input disabled value="{{Csr}}" placeholder="SR 电容" type="digit" tips="SR 电容，单位：nF" />
+</view>

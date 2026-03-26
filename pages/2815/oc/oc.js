@@ -1,18 +1,18 @@
 Page({
   data: {
-    Ilim: 4,
-    Rlim: 100,
+    Ilim: 12,
+    Rlim: 16.67,
 
-    IlimResult: 3.10,
-    RlimResult: 77.47,
+    IlimResult: 12,
+    RlimResult: 16.67,
   },
 
   compute_click() {
     const Ilim = Number(this.data.Ilim);
     const Rlim = Number(this.data.Rlim);
 
-    const RlimResult = 5.08 * 61000 / Ilim / 1000;
-    const IlimResult = 5.08 * 61000 / Rlim / 1000;
+    const RlimResult = 4 / Ilim / 20 * 1000;
+    const IlimResult = 4 / Rlim / 20 * 1000;
 
     this.setData({
       RlimResult: RlimResult.toFixed(2),
@@ -24,13 +24,13 @@ Page({
     const promise = new Promise(resolve => {
       setTimeout(() => {
         resolve({
-          title: 'RSSW0706IRH/HRH 过流保护'
+          title: 'RSSW2815K2RH 过流保护'
         })
       }, 2000)
     })
     return {
-      title: 'RSSW0706IRH/HRH 过流保护',
-      path: '/pages/0706/oc/oc',
+      title: 'RSSW2815K2RH 过流保护',
+      path: '/pages/2815/oc/oc',
       promise
     }
   }
