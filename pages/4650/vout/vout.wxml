@@ -1,3 +1,7 @@
+<view class="notice">
+  <t-notice-bar content="RSHP4650SRH 多通道并联时，若 VOUTS 接到了一起，则计算的电阻值需要除以并联通道数 N" visible="{{true}}" prefixIcon="sound">
+</t-notice-bar>
+</view>
 <!-- 根据电压算电阻 -->
 <view class="input-data">
   <t-input model:value="{{Vout}}" placeholder="期望输出电压" type="digit" tips="期望输出电压，单位：V" />
