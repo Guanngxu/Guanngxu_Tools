@@ -68,7 +68,7 @@ const calcListMap = [
       { "title": "过流保护", "page": "/pages/2815/oc/oc" },
       { "title": "电流采样", "page": "/pages/2815/cs/cs" },
       { "title": "输入欠压保护", "page": "/pages/2815/uvlo/uvlo" },
-      // { "title": "输出过压保护", "page": "/pages/2815/ovp/ovp" },
+      { "title": "输出过压保护", "page": "/pages/2815/ovp/ovp" },
       { "title": "PG阈值设定", "page": "/pages/2815/pgth/pgth" },
     ]
   },

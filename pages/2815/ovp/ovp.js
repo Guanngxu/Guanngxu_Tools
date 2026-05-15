@@ -1,10 +1,10 @@
 Page({
   data: {
-    R1: 47,
-    R2: 51,
+    R1: 517,
+    R2: 47,
 
-    VovpResult: 6.51,
-    VreResult: 6.05,
+    VovpResult: 13.20,
+    VreResult: 12.72,
   },
 
   compute_click() {
