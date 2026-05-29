@@ -1,6 +1,7 @@
+<wxs src="../../../stringUtil.wxs" module="utils" />
 <!-- 根据电流计算电阻 -->
 <view class="input-data">
-  <t-input model:value="{{Ilim}}" placeholder="期望过流保护点 Ilim" type="digit" tips="期望过流保护点 Ilim，单位：A" />
+  <t-input cursor="{{utils.getLen(Ilim)}}" model:value="{{Ilim}}" placeholder="期望过流保护点 Ilim" type="digit" tips="期望过流保护点 Ilim，单位：A" />
 </view>
 
 <view class="compute-button">
@@ -12,7 +13,7 @@
 
 <!-- 根据电阻计算过流保护点 -->
 <view class="input-data">
-  <t-input model:value="{{Rlim}}" placeholder="IL 引脚对地电阻值" type="digit" tips="IL 引脚对地电阻值 Rlim，单位：kohm" />
+  <t-input cursor="{{utils.getLen(Rlim)}}" model:value="{{Rlim}}" placeholder="IL 引脚对地电阻值" type="digit" tips="IL 引脚对地电阻值 Rlim，单位：kohm" />
 </view>
 
 <view class="compute-button">

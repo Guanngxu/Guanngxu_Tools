@@ -1,8 +1,9 @@
+<wxs src="../../../stringUtil.wxs" module="utils" />
 <view class="input-data">
-  <t-input model:value="{{Vin}}" placeholder="输入电压" type="digit" tips="输入电压，单位：V" />
-  <t-input model:value="{{Vout}}" placeholder="输出电压" type="digit" tips="输出电压，单位：V" />
-  <t-input model:value="{{Lout}}" placeholder="输出滤波电感" type="digit" tips="输出滤波电感，单位：uH" />
-  <t-input model:value="{{fs}}" placeholder="开关频率" type="digit" tips="开关频率，单位：kHz" />
+  <t-input cursor="{{utils.getLen(Vin)}}" model:value="{{Vin}}" placeholder="输入电压" type="digit" tips="输入电压，单位：V" />
+  <t-input cursor="{{utils.getLen(Vout)}}" model:value="{{Vout}}" placeholder="输出电压" type="digit" tips="输出电压，单位：V" />
+  <t-input cursor="{{utils.getLen(Lout)}}" model:value="{{Lout}}" placeholder="输出滤波电感" type="digit" tips="输出滤波电感，单位：uH" />
+  <t-input cursor="{{utils.getLen(fs)}}" model:value="{{fs}}" placeholder="开关频率" type="digit" tips="开关频率，单位：kHz" />
 </view>
 
 <view class="compute-button">

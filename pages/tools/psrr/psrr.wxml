@@ -1,5 +1,6 @@
+<wxs src="../../../stringUtil.wxs" module="utils" />
 <view class="input-data">
-  <t-input model:value="{{PSRR}}" placeholder="PSRR" type="digit" tips="PSRR，单位：dB" />
+  <t-input cursor="{{utils.getLen(PSRR)}}" model:value="{{PSRR}}" placeholder="PSRR" type="digit" tips="PSRR，单位：dB" />
 </view>
 
 <view class="compute-button">

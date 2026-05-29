@@ -1,5 +1,6 @@
+<wxs src="../../../stringUtil.wxs" module="utils" />
 <view class="input-data">
-  <t-input model:value="{{Css}}" placeholder="缓启动电容" type="digit" tips="缓启动电容，单位：nF" />
+  <t-input cursor="{{utils.getLen(Css)}}" model:value="{{Css}}" placeholder="缓启动电容" type="digit" tips="缓启动电容，单位：nF" />
 </view>
 
 <view class="compute-button">

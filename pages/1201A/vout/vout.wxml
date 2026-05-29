@@ -1,7 +1,8 @@
+<wxs src="../../../stringUtil.wxs" module="utils" />
 <!-- 根据电阻算电压 -->
 <view class="input-data">
-  <t-input model:value="{{Rfb1}}" placeholder="上分压电阻" type="digit" tips="上分压电阻，单位：kohm" />
-  <t-input model:value="{{Rfb2}}" placeholder="下分压电阻" type="digit" tips="下分压电阻，单位：kohm" />
+  <t-input cursor="{{utils.getLen(Rfb1)}}" model:value="{{Rfb1}}" placeholder="上分压电阻" type="digit" tips="上分压电阻，单位：kohm" />
+  <t-input cursor="{{utils.getLen(Rfb2)}}" model:value="{{Rfb2}}" placeholder="下分压电阻" type="digit" tips="下分压电阻，单位：kohm" />
 </view>
 <view class="compute-button">
   <t-button bind:tap="compute_click" size="large" theme="light" variant="outline" block>计算输出电压</t-button>

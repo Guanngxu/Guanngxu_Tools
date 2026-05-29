@@ -1,6 +1,7 @@
+<wxs src="../../../stringUtil.wxs" module="utils" />
 <!-- 根据频率计算电阻 -->
 <view class="input-data">
-  <t-input model:value="{{Fsw}}" placeholder="设置开关频率" type="digit" tips="设置开关频率，单位：kHz" />
+  <t-input cursor="{{utils.getLen(Fsw)}}" model:value="{{Fsw}}" placeholder="设置开关频率" type="digit" tips="设置开关频率，单位：kHz" />
 </view>
 
 <view class="compute-button">

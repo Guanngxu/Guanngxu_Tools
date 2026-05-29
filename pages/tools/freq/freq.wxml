@@ -1,6 +1,7 @@
+<wxs src="../../../stringUtil.wxs" module="utils" />
 <!-- 根据频率计算周期 -->
 <view class="input-data">
-  <t-input model:value="{{freq}}" type="digit" />
+  <t-input cursor="{{utils.getLen(freq)}}" model:value="{{freq}}" type="digit" />
   <t-dropdown-menu>
     <t-dropdown-item options="{{freqOptions}}" value="{{freqOptionsValue}}" bindchange="freqOptionChange" />
   </t-dropdown-menu>
@@ -16,7 +17,7 @@
 
 <!-- 根据周期计算频率 -->
 <view class="input-data">
-  <t-input model:value="{{period}}" type="digit" />
+  <t-input cursor="{{utils.getLen(period)}}" model:value="{{period}}" type="digit" />
   <t-dropdown-menu>
     <t-dropdown-item options="{{periodOptions}}" value="{{periodOptionsValue}}" bindchange="periodOptionChange" />
   </t-dropdown-menu>

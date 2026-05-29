@@ -1,11 +1,12 @@
+<wxs src="../../../stringUtil.wxs" module="utils" />
 <view class="input-data">
-  <t-input model:value="{{Vin}}" placeholder="输入电压 Vin" type="digit" tips="输入电压 Vin，单位：V" />
-  <t-input model:value="{{Vout}}" placeholder="输出电压 Vout" type="digit" tips="输出电压 Vout，单位：V" />
-  <t-input model:value="{{Iout}}" placeholder="输出电流 Iout" type="digit" tips="输出电流 Iout，单位：A" />
-  <t-input model:value="{{Switchf}}" placeholder="开关频率 f" type="digit" tips="开关频率 f，单位：kHz" />
-  <t-input model:value="{{PowerL}}" placeholder="功率电感 L" type="digit" tips="输出电感 L，单位：uH" />
-  <t-input model:value="{{Cin}}" placeholder="输入电容 Cin" type="digit" tips="输入电容 Cin，单位：uF" />
-  <t-input model:value="{{ESR}}" placeholder="输入电容 ESR" type="digit" tips="输入电容 ESR，单位：mohm" />
+  <t-input cursor="{{utils.getLen(Vin)}}" model:value="{{Vin}}" placeholder="输入电压 Vin" type="digit" tips="输入电压 Vin，单位：V" />
+  <t-input cursor="{{utils.getLen(Vout)}}" model:value="{{Vout}}" placeholder="输出电压 Vout" type="digit" tips="输出电压 Vout，单位：V" />
+  <t-input cursor="{{utils.getLen(Iout)}}" model:value="{{Iout}}" placeholder="输出电流 Iout" type="digit" tips="输出电流 Iout，单位：A" />
+  <t-input cursor="{{utils.getLen(Switchf)}}" model:value="{{Switchf}}" placeholder="开关频率 f" type="digit" tips="开关频率 f，单位：kHz" />
+  <t-input cursor="{{utils.getLen(PowerL)}}" model:value="{{PowerL}}" placeholder="功率电感 L" type="digit" tips="输出电感 L，单位：uH" />
+  <t-input cursor="{{utils.getLen(Cin)}}" model:value="{{Cin}}" placeholder="输入电容 Cin" type="digit" tips="输入电容 Cin，单位：uF" />
+  <t-input cursor="{{utils.getLen(ESR)}}" model:value="{{ESR}}" placeholder="输入电容 ESR" type="digit" tips="输入电容 ESR，单位：mohm" />
 </view>
 
 <view class="compute-button">

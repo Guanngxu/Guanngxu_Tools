@@ -1,0 +1,9 @@
+// 注意：WXS 语法有别于现代 JS，不能用 let/const 和箭头函数，请保持这种老式写法
+function getLen(val) {
+  if (val === null || val === undefined) return 0;
+  return (val + '').length;
+}
+
+module.exports = {
+  getLen: getLen
+};

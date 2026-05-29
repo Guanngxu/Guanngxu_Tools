@@ -1,8 +1,9 @@
+<wxs src="../../../stringUtil.wxs" module="utils" />
 <!-- 根据过流保护点计算电阻 -->
 <view class="input-data">
-  <t-input model:value="{{VBIAS}}" placeholder="VBIAS 电压" type="digit" tips="VBIAS 电压，单位：V" />
-  <t-input model:value="{{Rcs}}" placeholder="CS 对 VBIAS 电阻" type="digit" tips="CS 对 VBIAS 电阻，单位：kohm" />
-  <t-input model:value="{{Vcs}}" placeholder="CS 端电压" type="digit" tips="CS 端电压，单位：V" />
+  <t-input cursor="{{utils.getLen(VBIAS)}}" model:value="{{VBIAS}}" placeholder="VBIAS 电压" type="digit" tips="VBIAS 电压，单位：V" />
+  <t-input cursor="{{utils.getLen(Rcs)}}" model:value="{{Rcs}}" placeholder="CS 对 VBIAS 电阻" type="digit" tips="CS 对 VBIAS 电阻，单位：kohm" />
+  <t-input cursor="{{utils.getLen(Vcs)}}" model:value="{{Vcs}}" placeholder="CS 端电压" type="digit" tips="CS 端电压，单位：V" />
 </view>
 
 <view class="compute-button">

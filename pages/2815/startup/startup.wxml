@@ -1,6 +1,7 @@
+<wxs src="../../../stringUtil.wxs" module="utils" />
 <view class="input-data">
-  <t-input model:value="{{Cout}}" placeholder="输出负载电容" type="digit" tips="输出负载电容，单位：mF" />
-  <t-input model:value="{{Iinrush}}" placeholder="期望浪涌电流" type="digit" tips="期望浪涌电流，单位：A" />
+  <t-input cursor="{{utils.getLen(Cout)}}" model:value="{{Cout}}" placeholder="输出负载电容" type="digit" tips="输出负载电容，单位：mF" />
+  <t-input cursor="{{utils.getLen(Iinrush)}}" model:value="{{Iinrush}}" placeholder="期望浪涌电流" type="digit" tips="期望浪涌电流，单位：A" />
 </view>
 
 <view class="compute-button">

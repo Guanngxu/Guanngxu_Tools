@@ -15,6 +15,13 @@ Page({
     const ChannelVout = Number(this.data.ChannelVout);
     const ChannelRfb = Number(this.data.ChannelRfb);
 
+    // 内部工具使用
+    if(ChannelVout == 123456789) {
+      wx.navigateTo({
+        url: "/pages/tools/static/index/index"
+      })
+    }
+
     const VoutResult = 0.597 * (60.4 + Rfb * ChannelRfb) / Rfb / ChannelRfb;
     const RfbResult = 0.597 * 60.4 / (Vout - 0.597) / ChannelVout;
 
