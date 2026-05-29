@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "器件基准数据索引",
+  "usingComponents": {
+    "t-search": "tdesign-miniprogram/search/search",
+    "t-cell": "tdesign-miniprogram/cell/cell",
+    "t-cell-group": "tdesign-miniprogram/cell-group/cell-group",
+    "t-icon": "tdesign-miniprogram/icon/icon"
+  }
+}

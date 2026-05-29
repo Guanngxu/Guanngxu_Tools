@@ -1,0 +1,37 @@
+<view class="page-container">
+  <view class="search-wrap">
+    <t-search 
+      value="{{keyword}}" 
+      placeholder="搜索料号 (如: 4644, 1101)" 
+      bind:change="onSearchChange"
+      bind:cancel="onSearchCancel"
+      shape="round"
+      clearable
+    />
+  </view>
+
+  <view style="height: 60px;"></view>
+
+  <block wx:if="{{displayList.length > 0}}">
+    <view class="grid-content">
+      <view 
+        class="grid-item" 
+        wx:for="{{displayList}}" 
+        wx:key="id"
+        data-id="{{item.id}}"
+        bind:tap="goToDetail"
+        hover-class="grid-item-hover"
+      >
+        <view class="device-avatar">{{item.id}}</view>
+        <view class="device-name">{{item.name}}</view>
+      </view>
+    </view>
+  </block>
+
+  <view wx:else class="empty-state">
+    <t-icon name="search-error" size="48px" color="#bbbbbb" />
+    <view class="empty-text">未找到对应料号的数据</view>
+  </view>
+
+  <view class="safe-bottom"></view>
+</view>

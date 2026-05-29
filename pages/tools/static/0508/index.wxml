@@ -1,0 +1,48 @@
+<view class="page-container">
+  <!-- <view class="notice-bar">
+    <t-icon name="info-circle-filled" size="18px" color="#0052D9" />
+    <text class="notice-text">所有原理图设计要求不悬空管脚。CMOS器件不使用的管脚，输入端不允许悬空，输出可以悬空。</text>
+  </view> -->
+
+  <view class="section">
+    <view class="section-header">
+      <view class="title-left">
+        <t-icon name="image" size="20px" color="#333" />
+        <text class="title-text">器件引脚外形图</text>
+      </view>
+      <t-tag theme="primary" variant="light" size="small">点击可放大</t-tag>
+    </view>
+    <view class="image-wrapper">
+      <t-image 
+        src="{{chipImageUrl}}" 
+        mode="aspectFit" 
+        width="100%" 
+        height="180" 
+        bind:tap="onPreviewImage"
+        shape="round"
+      />
+    </view>
+  </view>
+
+  <t-divider dashed content="测试基准数据" align="center" />
+
+  <view class="section">
+    <view class="data-table">
+      <view class="tr table-header">
+        <view class="th flex-2">测试项</view>
+        <view class="th flex-1">阻抗(Ω)</view>
+        <view class="th flex-1">二极管电压(V)</view>
+      </view>
+      
+      <block wx:for="{{benchmarkData}}" wx:key="id">
+        <view class="tr {{index % 2 === 1 ? 'zebra' : ''}}">
+          <view class="td flex-2 item-name">{{item.testItem}}</view>
+          <view class="td flex-1">{{item.impedance}}</view>
+          <view class="td flex-1">{{item.voltage}}</view>
+        </view>
+      </block>
+    </view>
+  </view>
+
+  <view class="safe-bottom"></view>
+</view>
