@@ -30,7 +30,7 @@ Page({
     })
     return {
       title: 'RSW1101IRH/HRH 过流保护',
-      path: '/pages/1101/cs/cs',
+      path: '/pages/1101/oc/oc',
       promise
     }
   }
