@@ -1,0 +1,20 @@
+page {
+  box-sizing: border-box;
+  padding-bottom: calc(env(safe-area-inset-bottom) + 96rpx);
+}
+
+.input-data {
+  margin: 32rpx;
+}
+
+.compute-button {
+  margin: 32rpx;
+  margin-left: 50rpx;
+  margin-right: 50rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.compute-result {
+  margin: 32rpx;
+}

@@ -127,6 +127,13 @@ const calcListMap = [
     ]
   },
   {
+    "title": "RSW1102IRH",
+    "items": [
+      { "title": "输出电压", "page": "/pages/1102/vout/vout" },
+      { "title": "过流保护", "page": "/pages/1102/oc/oc" },
+    ]
+  },
+  {
     "title": "RSW1201HRH/URH",
     "items": [
       { "title": "输出电压", "page": "/pages/1201/vout/vout" },

@@ -1,0 +1,13 @@
+<wxs src="../../../stringUtil.wxs" module="utils" />
+<!-- 根据电阻算电压 -->
+<view class="input-data">
+  <t-input cursor="{{utils.getLen(Rref)}}" model:value="{{Rref}}" placeholder="REF对地电阻" type="digit" tips="REF对地电阻，单位：kohm" />
+  <t-input cursor="{{utils.getLen(Rss_set)}}" model:value="{{Rss_set}}" placeholder="SS_SET对地电阻" type="digit" tips="SS_SET对地电阻，单位：kohm" />
+</view>
+<view class="compute-button">
+  <t-button bind:tap="compute_click" size="large" theme="light" variant="outline" block>计算输出电压</t-button>
+</view>
+<view class="compute-result">
+  <t-input disabled value="{{VosnsResult}}" placeholder="输出电压" type="digit" tips="输出电压，单位：V" />
+  <t-input disabled value="{{IrefResult}}" placeholder="Iref电流" type="digit" tips="Iref电流，单位：uA" />
+</view>
